@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYQScore : ADRE Mocktest & PYQ | Assam's First Active-Recall Exam Engine</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Master ADRE 3.0 Grade 3 & 4 with 40+ chapter-wise syllabus drills, real -0.25 negative marking, 150-question mock tests, and bilingual Assamese & English explanations. Stop reading blurry PDFs.">
+  <meta name="keywords" content="ADRE 3.0, SLRC Grade 3, Grade 4, Assam Police, PYQ Mock test, Assamese competitive exam app, Assam Direct Recruitment 2024 2025, Yandabo treaty, Mistake Vault">
+  <meta name="author" content="PYQScore Team">
+  <meta property="og:title" content="PYQScore : ADRE Mocktest & PYQ - Active-Recall Exam Engine">
+  <meta property="og:description" content="Real -0.25 SLRC negative marking, bilingual Assamese/English toggle, and 40,000+ calibrated MCQs for ADRE aspirants.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon using app logo -->
+  <link rel="icon" type="image/png" href="./asset/ADRE 3.0 (1).png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Bengali (for Assamese script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#F04156',
+              redHover: '#DC2B41',
+              redLight: '#FDF0F2',
+              redMuted: '#FDE4E7',
+              dark: '#1C1917',
+              slate: '#36322F',
+              muted: '#716A62',
+              emerald: '#10B981',
+              amber: '#D97706'
+            },
+            beige: {
+              DEFAULT: '#FAF7F2',
+              50: '#FDFCF9',
+              100: '#FAF7F2',
+              200: '#F5EFE6',
+              300: '#EDE4D6',
+              400: '#DFD4C2',
+              card: '#FFFFFF',
+              border: '#E8DFD3'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Bengali"', 'system-ui', 'sans-serif'],
+            assamese: ['"Noto Sans Bengali"', '"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'warm-sm': '0 2px 8px -2px rgba(28, 25, 23, 0.05)',
+            'warm-md': '0 8px 24px -6px rgba(28, 25, 23, 0.08)',
+            'warm-lg': '0 16px 36px -8px rgba(28, 25, 23, 0.12)',
+            'brand-glow': '0 12px 30px -6px rgba(240, 65, 86, 0.35)',
+          },
+          animation: {
+            'pulse-subtle': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 5s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Styling for Beige + #F04156 Palette */
+    body {
+      background-color: #FAF7F2;
+      color: #1C1917;
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Bengali', sans-serif;
+      overflow-x: hidden;
+    }
+    
+    .bg-beige-canvas {
+      background-color: #FAF7F2;
+    }
+
+    .card-beige {
+      background-color: #FFFFFF;
+      border: 1px solid #EAE3D7;
+      box-shadow: 0 4px 20px -4px rgba(60, 50, 40, 0.05);
+    }
+
+    .card-beige-hover {
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-beige-hover:hover {
+      transform: translateY(-4px);
+      border-color: #F8A8B2;
+      box-shadow: 0 16px 32px -8px rgba(240, 65, 86, 0.12), 0 4px 12px -2px rgba(28, 25, 23, 0.06);
+    }
+
+    .nav-beige {
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid #EAE3D7;
+    }
+
+    .hero-glow-red {
+      background: radial-gradient(circle, rgba(240, 65, 86, 0.11) 0%, rgba(250, 247, 242, 0) 70%);
+    }
+
+    .hero-glow-warm {
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, rgba(250, 247, 242, 0) 70%);
+    }
+
+    .assamese-text {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Option click animations */
+    .option-btn {
+      transition: all 0.2s ease;
+    }
+    .option-btn:hover:not(.locked) {
+      border-color: #F04156;
+      background-color: #FEF3F4;
+      transform: translateX(3px);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D8CEBE;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F04156;
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-redMuted selection:text-brand-red antialiased min-h-screen flex flex-col justify-between">
+
+
+  <!-- 1. STICKY HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-50 nav-beige transition-all duration-300" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <img src="./asset/ADRE 3.0 (1).png" alt="PYQScore App Logo" class="w-10 h-10 object-contain group-hover:scale-105 transition-transform">
+        <span class="text-xl font-extrabold tracking-tight text-brand-dark group-hover:text-brand-red transition-colors">
+          PYQScore<span class="text-brand-red">.</span>
+        </span>
+      </a>
+
+      <!-- Center Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-brand-slate">
+        <a href="#features" class="hover:text-brand-red transition-colors">Features</a>
+        <a href="#demo" class="hover:text-brand-red transition-colors flex items-center gap-1.5">
+          <span>Live Demo</span>
+          <span class="text-[10px] px-1.5 py-0.2 bg-brand-redLight text-brand-red rounded border border-brand-red/30 font-bold">Try</span>
+        </a>
+        <a href="#syllabus" class="hover:text-brand-red transition-colors">Syllabus Coverage</a>
+        <a href="#pricing" class="hover:text-brand-red transition-colors">Passes</a>
+        <a href="#affiliate" class="hover:text-brand-red transition-colors">Educators / Earn</a>
+        <a href="#faqs" class="hover:text-brand-red transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="hidden sm:flex items-center">
+        <button onclick="openModal('download-modal')" class="inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+          <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-10 w-auto">
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="md:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
+      <a href="#features" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Features</a>
+      <a href="#demo" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Interactive Demo Drill</a>
+      <a href="#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Syllabus Breakdown</a>
+      <a href="#pricing" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Pricing & Passes</a>
+      <a href="#affiliate" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Teacher & Mentor Program</a>
+      <a href="#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Frequently Asked Questions</a>
+      <div class="pt-3 border-t border-beige-border flex flex-col gap-2">
+        <button onclick="openModal('download-modal'); toggleMobileNav();" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
+          <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="flex-grow">
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-beige-canvas">
+      <!-- Ambient Radial Backdrops -->
+      <div class="absolute top-10 left-1/4 w-[550px] h-[550px] hero-glow-red pointer-events-none -z-10"></div>
+      <div class="absolute top-40 right-10 w-[500px] h-[500px] hero-glow-warm pointer-events-none -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copy Left (7 cols) -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- High-impact Tagline Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-white border border-brand-red/30 shadow-warm-sm">
+              <span class="text-sm">🏆</span>
+              <span class="text-xs font-extrabold text-brand-dark tracking-wide">
+                Assam’s #1 ADRE 3.0 Practice App
+              </span>
+              <span class="hidden sm:inline text-beige-border">|</span>
+              <span class="hidden sm:inline text-[11px] font-bold text-brand-red">SLRC Standard</span>
+            </div>
+
+            <!-- Headline (Strict 2 lines on mobile & desktop) -->
+            <h1 class="text-[23px] min-[390px]:text-[26px] sm:text-5xl lg:text-6xl font-black tracking-tight text-brand-dark leading-[1.2] sm:leading-[1.12]">
+              <span class="block">The All-in-One</span>
+              <span class="text-brand-red font-black block whitespace-nowrap sm:whitespace-normal">
+                ADRE 3.0 Mock Test & PYQ App
+              </span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-lg text-brand-slate max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Master <strong class="text-brand-dark font-bold">ADRE 3.0 Grade 3 & 4</strong> with 40+ chapter-wise syllabus drills, real <span class="px-2 py-0.5 rounded-md bg-brand-redLight text-brand-red font-mono font-bold">-0.25</span> negative marking, and bilingual <span class="text-brand-dark font-bold underline decoration-brand-red decoration-2">Assamese (অসমীয়া) & English</span> explanations.
+            </p>
+
+            <!-- Dual CTAs (Same line on mobile & desktop) -->
+            <div class="flex flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-4 pt-2 w-full max-w-md sm:max-w-none mx-auto lg:mx-0">
+              
+              <!-- Primary Google Play Button (Clean image as button, no background box) -->
+              <button onclick="openModal('download-modal')" class="flex-1 sm:flex-initial inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+                <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-11 sm:h-14 w-auto">
+              </button>
+
+              <!-- Secondary Free Demo CTA -->
+              <a href="#demo" class="flex-1 sm:flex-initial px-2 sm:px-6 h-11 sm:h-14 rounded-xl bg-white hover:bg-beige-50 border border-beige-border hover:border-brand-red text-brand-dark font-bold flex items-center justify-center gap-1.5 sm:gap-2 shadow-warm-sm transition-all text-center text-[11px] sm:text-sm leading-tight">
+                <span class="text-brand-red text-xs sm:text-sm shrink-0">▶</span>
+                <span class="truncate sm:overflow-visible">Try Free 25-MCQ Demo</span>
+              </a>
+
+            </div>
+
+            <!-- Social Proof Bar -->
+            <div class="pt-4 border-t border-beige-border flex flex-wrap items-center justify-center lg:justify-start gap-y-3 gap-x-6 text-xs text-brand-muted">
+              
+              <!-- Mentors Facepile -->
+              <div class="flex items-center gap-2">
+                <div class="flex -space-x-2">
+                  <span class="w-7 h-7 rounded-full bg-brand-red text-white border-2 border-white flex items-center justify-center text-[10px] font-bold">DB</span>
+                  <span class="w-7 h-7 rounded-full bg-brand-dark text-white border-2 border-white flex items-center justify-center text-[10px] font-bold">PB</span>
+                  <span class="w-7 h-7 rounded-full bg-amber-600 text-white border-2 border-white flex items-center justify-center text-[10px] font-bold">AS</span>
+                  <span class="w-7 h-7 rounded-full bg-beige-200 border-2 border-white flex items-center justify-center text-[10px] font-bold text-brand-red">+10</span>
+                </div>
+                <span>Trusted by <strong class="text-brand-dark font-bold">10+ Assam Whiteboard Mentors</strong></span>
+              </div>
+
+              <!-- Metrics -->
+              <div class="flex items-center gap-2">
+                <span class="text-brand-red font-bold">●</span>
+                <span><strong class="text-brand-dark font-bold">40,000+ MCQs</strong> Calibrated</span>
+              </div>
+
+              <div class="flex items-center gap-1.5 text-amber-600 font-bold">
+                <span>★ 4.9/5</span>
+                <span class="text-brand-muted font-normal">(1,800+ reviews)</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Hero Graphic Right: Illustration (5 cols) -->
+          <div class="lg:col-span-5 flex justify-center items-center relative">
+            <!-- Soft warm ambient glow -->
+            <div class="absolute inset-0 bg-brand-red/10 blur-3xl -z-10 rounded-full scale-90"></div>
+            
+            <img src="./asset/hero img.png" alt="Assam aspirant studying for ADRE" class="w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[450px] h-auto object-contain drop-shadow-xl select-none">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE PROBLEM VS. SOLUTION SECTION -->
+    <section class="py-20 bg-white border-y border-beige-border relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Why 94% Aspirants Fail Cutoff
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            The Harsh Truth About Reading PDFs vs. Active Recall
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base">
+            Reading static Telegram PDFs gives you a false sense of preparation. In the exam hall, the <strong class="text-brand-red font-bold">-0.25 penalty</strong> crushes unprepared guesses.
+          </p>
+        </div>
+
+        <!-- Split Comparison Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          
+          <!-- Old Boring Way (Left) -->
+          <div class="bg-beige-50 rounded-2xl p-6 sm:p-8 border border-beige-border relative overflow-hidden flex flex-col justify-between shadow-warm-sm">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between pb-4 border-b border-beige-border">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-stone-200 flex items-center justify-center text-brand-muted font-bold text-lg">
+                    ✕
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-brand-dark">The Old Telegram PDF Way</h3>
+                    <p class="text-xs text-stone-500">Passive, chaotic & low retention</p>
+                  </div>
+                </div>
+                <span class="text-xs font-mono font-semibold text-stone-500">Ineffective</span>
+              </div>
+
+              <!-- List of pain points -->
+              <ul class="space-y-4 text-sm text-brand-slate">
+                <li class="flex items-start gap-3">
+                  <span class="text-stone-400 font-bold text-base mt-0.5">✕</span>
+                  <span><strong>Blurry Scanned PDFs:</strong> Squinting at low-resolution 2022 question papers with no clear answer keys.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-stone-400 font-bold text-base mt-0.5">✕</span>
+                  <span><strong>No Real-time Timer:</strong> You spend 4 minutes on a single math puzzle without knowing you ran out of exam time.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-stone-400 font-bold text-base mt-0.5">✕</span>
+                  <span><strong>Zero Negative Marking Discipline:</strong> You casually tick answers without experiencing the agonizing -0.25 marks deduction.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-stone-400 font-bold text-base mt-0.5">✕</span>
+                  <span><strong>Forgot Your Mistakes:</strong> Wrong answers are forgotten in 2 hours; no automated revision system or bookmark vault.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-stone-400 font-bold text-base mt-0.5">✕</span>
+                  <span><strong>Clunky 2014-era Portals:</strong> Coaching sites filled with spam ads, crashing servers, and zero Assamese language support.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-beige-border flex items-center justify-between text-xs text-stone-500 font-medium">
+              <span>Result: Low speed, panic in real exam</span>
+              <span class="text-brand-red font-bold font-mono">Cutoff Missed</span>
+            </div>
+          </div>
+
+          <!-- The PYQScore Way (Right Highlighted) -->
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-brand-red shadow-warm-lg relative overflow-hidden flex flex-col justify-between">
+            <div class="space-y-6">
+              <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-x-3 gap-y-1.5 pb-4 border-b border-beige-border">
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                  <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand-red text-white flex items-center justify-center font-bold text-base sm:text-lg shadow-sm shrink-0">
+                    ✓
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-bold text-brand-dark whitespace-nowrap">The PYQScore Engine</h3>
+                    <p class="text-[11px] sm:text-xs text-brand-red font-semibold whitespace-nowrap">Active recall & precision calibrated</p>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-emerald-600 font-bold shrink-0">100% Exam Match</span>
+              </div>
+
+              <!-- List of solutions -->
+              <ul class="space-y-4 text-sm text-brand-dark">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-red font-bold text-base mt-0.5">✓</span>
+                  <span><strong>Instant Tap-to-Answer:</strong> High-speed interactive MCQ engine with immediate visual validation and deep explanations.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-red font-bold text-base mt-0.5">✓</span>
+                  <span><strong>Calibrated -0.25 SLRC Penalty:</strong> Trains your brain on when to leave doubtful questions vs. educated elimination.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-red font-bold text-base mt-0.5">✓</span>
+                  <span><strong>Automated "Mistake Vault":</strong> Every single wrong MCQ is logged automatically into your smart spaced-repetition deck.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-red font-bold text-base mt-0.5">✓</span>
+                  <span><strong>Instant Bilingual Switch:</strong> Read questions in pristine Assamese (অসমীয়া) or English with a single instantaneous tap.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-red font-bold text-base mt-0.5">✓</span>
+                  <span><strong>All-Assam State Leaderboard:</strong> Measure your percentile among 15,000+ serious candidates across all 35 Assam districts.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-beige-border flex items-center justify-between text-xs">
+              <span class="text-brand-slate font-medium">Result: Maximum retention & speed</span>
+              <span class="text-brand-red font-black font-mono">Rank Secured ★</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CORE FEATURES GRID -->
+    <section id="features" class="py-24 bg-beige-canvas relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Engineered For Top 1% Percentile
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            6 Powerful Features Built Specifically for Assam Aspirants
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base">
+            Every feature in PYQScore is calibrated directly against the SLRC Grade 3 and Grade 4 official exam guidelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Card 1 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Chapter-Wise ADRE PYQs
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Drill topic-wise questions carefully extracted from 2022 and 2024 SLRC official papers. Study Assam History, Geography, Polity, Maths, and General Knowledge topic by topic.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>40+ Curated Chapter Sets</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Real SLRC Negative Marking (-0.25)
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Experience the exact official scoring algorithm. A wrong guess takes away 0.25 marks, forcing you to develop disciplined exam strategy and avoid blind guessing.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>Official Cutoff Calibration</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Bilingual: Assamese & English
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Switch languages instantaneously on any question with zero page reload. Authentic Assamese orthography (অসমীয়া লিপি) prepared by native language proofreaders.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>Single-Tap Instant Toggle</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Automated "Mistake Vault"
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Never repeat the same blunder. The app silently captures every wrong answer into an exclusive revision vault, prompting you to re-test them until you reach 100% mastery.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>Spaced Repetition Algorithm</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              All-Assam Sunday Live Mocks
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Every Sunday at 10:00 AM, compete in full 150-question mock tests simultaneously with 10,000+ candidates across Guwahati, Silchar, Dibrugarh, and Jorhat.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>Live State-Wide Percentile</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card-beige card-beige-hover rounded-2xl p-6 sm:p-7 space-y-4 relative group">
+            <div class="w-12 h-12 rounded-xl bg-brand-redLight border border-brand-red/30 flex items-center justify-center text-brand-red group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Strava-Style Share Cards
+            </h3>
+            <p class="text-brand-slate text-sm leading-relaxed">
+              Celebrate your preparation streaks! Export sleek, branded scorecards and daily streak badges to share directly on WhatsApp study groups and Telegram channels.
+            </p>
+            <div class="pt-2 flex items-center gap-2 text-xs font-bold text-brand-red">
+              <span>1-Tap WhatsApp Image Export</span>
+              <span>→</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE PRACTICE PREVIEW (FUNCTIONAL DEMO WIDGET) -->
+    <section id="demo" class="py-20 bg-white border-y border-beige-border relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        
+        <!-- Section Header -->
+        <div class="text-center space-y-3 mb-10">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Interactive Live Sandbox
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Test The Active Recall Engine Right Now
+          </h2>
+          <p class="text-brand-slate text-sm max-w-xl mx-auto">
+            Experience our instant bilingual toggle, real-time SLRC -0.25 negative marking, and deep reasoning explanations.
+          </p>
+        </div>
+
+        <!-- The Interactive MCQ Box in Beige/White Card -->
+        <div class="card-beige rounded-3xl p-6 sm:p-8 border-2 border-beige-border shadow-warm-lg" id="interactive-demo-card">
+          
+          <!-- Widget Control Bar -->
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-beige-border">
+            
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-brand-redLight text-brand-red border border-brand-red/30">
+                ADRE Grade 3 Drill #07
+              </span>
+              <span class="text-xs text-brand-muted font-medium">Assam History & Modern Treaties</span>
+            </div>
+
+            <!-- Language Switcher & Question Nav -->
+            <div class="flex items-center gap-3">
+              <!-- Question Toggle (Q1 or Q2) -->
+              <div class="flex items-center bg-beige-200 rounded-lg p-0.5 border border-beige-border text-xs">
+                <button onclick="switchDemoQuestion(0)" id="q-tab-0" class="px-2.5 py-1 rounded-md font-bold text-white bg-brand-red transition-colors shadow-xs">Q1</button>
+                <button onclick="switchDemoQuestion(1)" id="q-tab-1" class="px-2.5 py-1 rounded-md font-medium text-brand-slate hover:text-brand-dark transition-colors">Q2</button>
+              </div>
+
+              <!-- Bilingual Button with #F04156 -->
+              <button onclick="toggleDemoLanguage()" id="demo-lang-btn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-redLight hover:bg-brand-redMuted text-brand-red border border-brand-red/30 text-xs font-bold transition-all">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                <span id="lang-btn-label">অসমীয়া (Toggle to ENG)</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Question Content -->
+          <div class="py-6 space-y-4">
+            
+            <div class="flex items-center justify-between text-xs text-brand-muted">
+              <span class="font-mono text-brand-red font-bold" id="demo-q-number">Question 1 of 2</span>
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-mono font-bold border border-emerald-200">+1.00</span>
+                <span class="px-2 py-0.5 rounded bg-brand-redLight text-brand-red font-mono font-bold border border-brand-red/30">-0.25 penalty</span>
+              </div>
+            </div>
+
+            <!-- Question Prompt (Switchable EN / AS) -->
+            <h3 class="text-lg sm:text-xl font-bold text-brand-dark leading-relaxed" id="demo-question-text">
+              প্ৰথম ইংগ-বাৰ্মিজ যুদ্ধৰ অন্ত পেলাই কোন চনত ঐতিহাসিক ইয়াণ্ডাবু সন্ধি (Treaty of Yandabo) স্বাক্ষৰিত হৈছিল?
+            </h3>
+
+          </div>
+
+          <!-- Options List (Interactive Clickable) -->
+          <div class="space-y-3" id="demo-options-container">
+            <!-- Options dynamically rendered via JS -->
+          </div>
+
+          <!-- Result & Explanation Feedback Box -->
+          <div id="demo-feedback-box" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
+            <!-- Content filled by JS on option click -->
+          </div>
+
+          <!-- Demo Footer Score Bar -->
+          <div class="mt-6 pt-5 border-t border-beige-border flex flex-wrap items-center justify-between gap-3 text-xs text-brand-muted">
+            <div class="flex items-center gap-4">
+              <span>Your Simulated Score: <strong id="simulated-score" class="text-brand-dark font-mono font-bold text-sm">0.00</strong></span>
+              <span class="hidden sm:inline">|</span>
+              <span class="hidden sm:inline font-medium" id="score-status-text">Select an option to evaluate</span>
+            </div>
+            <button onclick="resetDemoQuestion()" class="text-brand-slate hover:text-brand-red flex items-center gap-1 font-bold transition-colors">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              <span>Reset Question</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SYLLABUS BREAKDOWN / COVERAGE -->
+    <section id="syllabus" class="py-20 bg-beige-canvas relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            100% SLRC Blueprint Match
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Complete ADRE 3.0 Syllabus Drill Breakdown
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base">
+            Every subject has dedicated chapter modules, calibrated with difficulty ratings and previous year recurrence indices.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Subject 1 -->
+          <div class="card-beige rounded-2xl p-6 space-y-4 shadow-warm-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold font-mono text-brand-red">MODULE 01</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-brand-redLight text-brand-red font-bold">12 Sets</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark">Assam GK & Culture</h3>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Ahom Dynasty, Koch Kingdom, Moamoria Rebellion, Folk Traditions, Assamese Literature & Sahitya Akademi winners.
+            </p>
+            <div class="w-full bg-beige-200 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-brand-red h-1.5 rounded-full" style="width: 100%"></div>
+            </div>
+            <div class="text-[11px] text-brand-muted flex justify-between">
+              <span>Coverage: 100%</span>
+              <span class="text-brand-red font-bold">1,850 MCQs</span>
+            </div>
+          </div>
+
+          <!-- Subject 2 -->
+          <div class="card-beige rounded-2xl p-6 space-y-4 shadow-warm-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold font-mono text-brand-red">MODULE 02</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-brand-redLight text-brand-red font-bold">10 Sets</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark">General Mathematics</h3>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Class 8-10 standard Arithmetic, Ratio & Proportion, Percentage, Profit & Loss, Simple/Compound Interest, Geometry.
+            </p>
+            <div class="w-full bg-beige-200 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-brand-red h-1.5 rounded-full" style="width: 100%"></div>
+            </div>
+            <div class="text-[11px] text-brand-muted flex justify-between">
+              <span>Coverage: 100%</span>
+              <span class="text-brand-red font-bold">1,200 MCQs</span>
+            </div>
+          </div>
+
+          <!-- Subject 3 -->
+          <div class="card-beige rounded-2xl p-6 space-y-4 shadow-warm-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold font-mono text-brand-red">MODULE 03</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-brand-redLight text-brand-red font-bold">08 Sets</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark">Logical Reasoning</h3>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Coding-Decoding, Blood Relations, Syllogisms, Direction Sense, Non-Verbal Series & Seating Arrangement drills.
+            </p>
+            <div class="w-full bg-beige-200 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-brand-red h-1.5 rounded-full" style="width: 100%"></div>
+            </div>
+            <div class="text-[11px] text-brand-muted flex justify-between">
+              <span>Coverage: 100%</span>
+              <span class="text-brand-red font-bold">950 MCQs</span>
+            </div>
+          </div>
+
+          <!-- Subject 4 -->
+          <div class="card-beige rounded-2xl p-6 space-y-4 shadow-warm-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold font-mono text-brand-red">MODULE 04</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-brand-redLight text-brand-red font-bold">10 Sets</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-dark">General English & Grammar</h3>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Appropriate Prepositions, Idioms & Phrases, Voice/Narration changes, Error Spotting, Synonyms/Antonyms.
+            </p>
+            <div class="w-full bg-beige-200 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-brand-red h-1.5 rounded-full" style="width: 100%"></div>
+            </div>
+            <div class="text-[11px] text-brand-muted flex justify-between">
+              <span>Coverage: 100%</span>
+              <span class="text-brand-red font-bold">1,100 MCQs</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. TRANSPARENT PRICING / EXAM PASSES -->
+    <section id="pricing" class="py-24 bg-white border-t border-beige-border relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Transparent Pricing • Less Than 1 Book's Cost
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Invest in Your Government Job Dream
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base">
+            No recurring hidden subscriptions. Simple one-time exam passes with 100% money-back syllabus guarantee.
+          </p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+          
+          <!-- Plan 1: Monthly Sprint Pass -->
+          <div class="bg-beige-50 rounded-3xl p-8 border border-beige-border flex flex-col justify-between relative group hover:border-beige-400 transition-all shadow-warm-sm">
+            <div class="space-y-6">
+              
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-brand-dark">Monthly Sprint Pass</h3>
+                  <p class="text-xs text-brand-muted mt-0.5">Ideal for quick revision and last-minute drills</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-white text-brand-dark border border-beige-border">
+                  30 Days Access
+                </span>
+              </div>
+
+              <!-- Price Display -->
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-black text-brand-dark">₹129</span>
+                <span class="text-xs text-stone-400 line-through">₹299</span>
+                <span class="text-xs text-brand-red font-bold bg-brand-redLight px-2 py-0.5 rounded border border-brand-red/20">(Save 57%)</span>
+              </div>
+
+              <div class="h-px bg-beige-border"></div>
+
+              <!-- Features list -->
+              <ul class="space-y-3.5 text-sm text-brand-slate">
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>All 40 Chapter-Wise ADRE 3.0 Drill Sets</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>SLRC Official -0.25 Negative Marking Engine</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Instant Bilingual Toggle (অসমীয়া & English)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Automated Mistake Vault (Max 250 Questions)</span>
+                </li>
+                <li class="flex items-center gap-3 text-stone-400">
+                  <svg class="w-4 h-4 text-stone-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  <span>All-Assam Sunday Live Mocks (Limited to 2)</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="pt-8">
+              <button onclick="openModal('download-modal')" class="w-full py-3.5 rounded-xl bg-white hover:bg-beige-100 text-brand-dark font-bold text-sm transition-all border border-beige-border active:scale-95 shadow-warm-sm">
+                Get Monthly Sprint Pass
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Plan 2: ADRE 3.0 Season Pass (Best Value Highlighted with #F04156) -->
+          <div class="bg-white rounded-3xl p-8 border-2 border-brand-red flex flex-col justify-between relative shadow-warm-lg">
+            
+            <!-- Best Value Pill in #F04156 -->
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-brand-red text-white shadow-brand-glow">
+              🔥 Best Value • Exam Day Guarantee
+            </div>
+
+            <div class="space-y-6">
+              
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-brand-dark flex items-center gap-2">
+                    ADRE 3.0 Season Pass
+                  </h3>
+                  <p class="text-xs text-brand-red font-semibold mt-0.5">Valid until final exam day, even if postponed!</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-brand-redLight text-brand-red border border-brand-red/30">
+                  Unlimited
+                </span>
+              </div>
+
+              <!-- Price Display with Live Referral Calculation -->
+              <div>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-5xl font-black text-brand-dark" id="season-pass-price">₹249</span>
+                  <span class="text-sm text-stone-400 line-through" id="season-pass-old-price">₹599</span>
+                  <span class="text-xs text-brand-red font-bold bg-brand-redLight px-2 py-0.5 rounded border border-brand-red/30" id="season-discount-tag">
+                    Save 58%
+                  </span>
+                </div>
+                <span class="text-[11px] text-brand-muted block mt-1 font-medium">One-time payment • No renewal fees</span>
+              </div>
+
+              <div class="h-px bg-beige-border"></div>
+
+              <!-- Features list -->
+              <ul class="space-y-3.5 text-sm text-brand-dark">
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-brand-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>Unlimited Access</strong> to All 40+ Sets Until Exam Day</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-brand-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>Unlimited Mistake Vault</strong> with automatic bookmarking</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-brand-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>All Sunday 150-Question Live Mocks</strong> + State Rankings</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-brand-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>Detailed Reasoning PDF Export</strong> with Assamese Notes</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-brand-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Exclusive Invite to <strong>Topper WhatsApp Revision Squad</strong></span>
+                </li>
+              </ul>
+
+              <!-- Interactive Mentor Referral Code Box -->
+              <div class="bg-beige-50 p-3.5 rounded-xl border border-beige-border space-y-2">
+                <label for="referral-input" class="block text-xs font-bold text-brand-dark">
+                  Have a mentor / teacher referral code?
+                </label>
+                <div class="flex gap-2">
+                  <input type="text" id="referral-input" placeholder="e.g. ASSAM10, LAKHYA, DHEMAJI" class="bg-white border border-beige-border text-brand-dark text-xs rounded-lg px-3 py-2 flex-grow uppercase tracking-wider focus:outline-none focus:border-brand-red placeholder-stone-400">
+                  <button onclick="applyReferralCode()" class="px-3.5 py-2 bg-brand-red hover:bg-brand-redHover text-white text-xs font-bold rounded-lg shadow-xs transition-colors shrink-0">
+                    Apply
+                  </button>
+                </div>
+                <!-- Dynamic feedback message -->
+                <div id="referral-feedback" class="text-[11px] hidden"></div>
+              </div>
+
+            </div>
+
+            <!-- CTA Button in #F04156 -->
+            <div class="pt-6">
+              <button onclick="openModal('download-modal')" class="w-full py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-black text-sm tracking-wide shadow-brand-glow transition-all hover:scale-[1.01] active:scale-95">
+                Unlock Season Pass on Play Store →
+              </button>
+              <div class="flex items-center justify-center gap-2 mt-2 text-[11px] text-brand-muted">
+                <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <span>7-Day 100% Risk-Free Guarantee</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. EDUCATOR & MENTOR PARTNER CALLOUT (B2B2C) -->
+    <section id="affiliate" class="py-20 bg-beige-canvas relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="card-beige rounded-3xl p-8 sm:p-12 border-2 border-brand-red/30 bg-gradient-to-br from-white via-beige-50 to-beige-100 shadow-warm-lg relative overflow-hidden">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+                <svg class="w-3.5 h-3.5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                B2B Educator & Creator Program
+              </span>
+              
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-dark">
+                Are You an Assam YouTube / Telegram Educator?
+              </h2>
+              
+              <p class="text-brand-slate text-sm sm:text-base leading-relaxed max-w-2xl">
+                Partner with PYQScore. Give your students verified chapter-wise test series with your branded discount code. Earn <strong class="text-brand-red font-bold">₹20 to ₹40 per enrolled student</strong> with real-time UPI payouts and a transparent live dashboard.
+              </p>
+
+              <!-- Stats Bar -->
+              <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-brand-dark font-bold">
+                <div class="flex items-center gap-2">
+                  <span class="text-brand-red text-xl font-extrabold">₹1.4L+</span>
+                  <span class="text-brand-muted font-medium">Paid to Assam Creators</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-brand-dark text-xl font-extrabold">24h</span>
+                  <span class="text-brand-muted font-medium">Direct UPI Settlement</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-brand-red text-xl font-extrabold">Custom</span>
+                  <span class="text-brand-muted font-medium">Dedicated Referral Code</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button in #F04156 -->
+            <div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
+              <button onclick="openModal('mentor-modal')" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-extrabold text-sm shadow-brand-glow transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                <span>Apply as Mentor Partner</span>
+                <span>→</span>
+              </button>
+              <span class="text-[11px] text-brand-muted mt-2">Zero setup fee • Instant approval for active creators</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. FAQ ACCORDION -->
+    <section id="faqs" class="py-20 bg-white border-t border-beige-border relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center space-y-4 mb-14">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Got Questions? We Have Answers
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-brand-slate text-sm">
+            Everything you need to know about the PYQScore Android app and ADRE 3.0 test series.
+          </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4" id="faq-accordion">
+          
+          <!-- Item 1 -->
+          <div class="card-beige rounded-2xl overflow-hidden transition-colors">
+            <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-bold text-brand-dark text-sm sm:text-base">
+                1. Is the app completely bilingual in Assamese (অসমীয়া) and English?
+              </span>
+              <span id="faq-icon-1" class="w-6 h-6 rounded-full bg-beige-200 flex items-center justify-center text-brand-slate font-bold text-xs shrink-0 transition-transform duration-200">
+                +
+              </span>
+            </button>
+            <div id="faq-content-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-beige-border pt-3">
+              Yes, 100%! Every question, options, and full step-by-step reasoning has been written and proofread in both authentic Assamese (অসমীয়া) and English. You can toggle between languages instantaneously on any screen without losing your progress or resetting the timer.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="card-beige rounded-2xl overflow-hidden transition-colors">
+            <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-bold text-brand-dark text-sm sm:text-base">
+                2. Can I attempt mock tests offline without internet connectivity?
+              </span>
+              <span id="faq-icon-2" class="w-6 h-6 rounded-full bg-beige-200 flex items-center justify-center text-brand-slate font-bold text-xs shrink-0 transition-transform duration-200">
+                +
+              </span>
+            </button>
+            <div id="faq-content-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-beige-border pt-3">
+              Yes. You can download your chapter drills and full-length mocks locally to your phone with a single tap. Once downloaded, you can practice anywhere in rural areas or during travel with zero internet. Your score and Mistake Vault will automatically sync whenever you reconnect.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="card-beige rounded-2xl overflow-hidden transition-colors">
+            <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-bold text-brand-dark text-sm sm:text-base">
+                3. How accurate is the -0.25 negative marking engine?
+              </span>
+              <span id="faq-icon-3" class="w-6 h-6 rounded-full bg-beige-200 flex items-center justify-center text-brand-slate font-bold text-xs shrink-0 transition-transform duration-200">
+                +
+              </span>
+            </button>
+            <div id="faq-content-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-beige-border pt-3">
+              Our negative marking algorithm is calibrated precisely to the State Level Recruitment Commission (SLRC) official guidelines. Each correct answer awards +1.00 marks, while each incorrect response strictly deducts -0.25 marks. Unattempted questions incur 0 penalties.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="card-beige rounded-2xl overflow-hidden transition-colors">
+            <button onclick="toggleFaq(4)" class="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-bold text-brand-dark text-sm sm:text-base">
+                4. What is the validity of the ADRE 3.0 Season Pass if exams get postponed?
+              </span>
+              <span id="faq-icon-4" class="w-6 h-6 rounded-full bg-beige-200 flex items-center justify-center text-brand-slate font-bold text-xs shrink-0 transition-transform duration-200">
+                +
+              </span>
+            </button>
+            <div id="faq-content-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-beige-border pt-3">
+              We offer our guaranteed <strong>Exam Day Promise</strong>. Even if the Assam government reschedules or extends the ADRE 3.0 Grade 3 or Grade 4 examination dates, your Season Pass will automatically remain active with full access until the day the final written shift concludes. No extra payments ever.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="card-beige rounded-2xl overflow-hidden transition-colors">
+            <button onclick="toggleFaq(5)" class="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-bold text-brand-dark text-sm sm:text-base">
+                5. What is the refund or cancellation policy?
+              </span>
+              <span id="faq-icon-5" class="w-6 h-6 rounded-full bg-beige-200 flex items-center justify-center text-brand-slate font-bold text-xs shrink-0 transition-transform duration-200">
+                +
+              </span>
+            </button>
+            <div id="faq-content-5" class="hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-beige-border pt-3">
+              We stand by our quality with a 7-day 100% money-back guarantee. If you complete 3 mock tests and feel our question quality and negative marking do not match the real SLRC exam standard, email us at <code class="text-brand-red font-bold">support@pyqscore.in</code> and receive a prompt full refund via UPI.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL HIGH-IMPACT CTA STRIP -->
+    <section class="py-16 bg-beige-200 border-t border-beige-border">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+          Ready to Crack ADRE 3.0 on Your First Attempt?
+        </h2>
+        <p class="text-brand-slate text-sm sm:text-base max-w-2xl mx-auto">
+          Join 15,000+ candidates who switched from passive PDF reading to active-recall practice. Available now for Android.
+        </p>
+          <button onclick="openModal('download-modal')" class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+            <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-14 w-auto">
+          </button>
+          <button onclick="openModal('beta-modal')" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white hover:bg-beige-50 text-brand-dark font-bold text-sm border border-beige-border shadow-warm-sm transition-all">
+            Join Telegram Study Group
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. HIGH-CONVERSION FOOTER (Rich Deep Espresso for High Contrast Grounding) -->
+  <footer class="bg-brand-dark text-stone-300 pt-16 pb-12 text-xs border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="./asset/ADRE 3.0 (1).png" alt="PYQScore Logo" class="w-10 h-10 object-contain">
+            <span class="text-xl font-extrabold text-white">PYQScore<span class="text-brand-red">.</span></span>
+          </div>
+          
+          <p class="text-stone-400 text-xs leading-relaxed max-w-sm">
+            Assam’s leading mobile test preparation platform for SLRC ADRE 3.0 Grade 3, Grade 4, Assam Police, and state-level competitive exams. Active recall over passive reading.
+          </p>
+
+          <!-- Play store badge pill -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-stone-900 border border-stone-800 text-white">
+            <span class="w-2 h-2 rounded-full bg-brand-red"></span>
+            <span class="text-[11px] font-mono">Build 2.4.1 (Stable Android Release)</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Exam Drill Sets -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Exam Syllabus</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#syllabus" class="hover:text-brand-red transition-colors">Assam History & Heritage</a></li>
+            <li><a href="#syllabus" class="hover:text-brand-red transition-colors">General Mathematics (Cl 8-10)</a></li>
+            <li><a href="#syllabus" class="hover:text-brand-red transition-colors">General English & Grammar</a></li>
+            <li><a href="#syllabus" class="hover:text-brand-red transition-colors">Logical Reasoning & Mental Ability</a></li>
+            <li><a href="#syllabus" class="hover:text-brand-red transition-colors">Assam Current Affairs 2024-25</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#features" class="hover:text-brand-red transition-colors">Mistake Vault System</a></li>
+            <li><a href="#demo" class="hover:text-brand-red transition-colors">Interactive Demo MCQ</a></li>
+            <li><a href="#pricing" class="hover:text-brand-red transition-colors">Season Pass (₹249)</a></li>
+            <li><a href="#affiliate" class="hover:text-brand-red transition-colors">Educator Partner Program</a></li>
+            <li><a href="#faqs" class="hover:text-brand-red transition-colors">Refund & Guarantee</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Legal & Support -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Legal & Contact</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#" onclick="alert('Privacy Policy: PYQScore does not sell or share student data with third-party advertisers. All data is encrypted via SSL.'); return false;" class="hover:text-brand-red transition-colors">Privacy Policy</a></li>
+            <li><a href="#" onclick="alert('Terms of Service: Mock tests and question banks are calibrated for educational and competitive examination prep.'); return false;" class="hover:text-brand-red transition-colors">Terms of Service</a></li>
+            <li><a href="mailto:support@pyqscore.in" class="hover:text-brand-red transition-colors">support@pyqscore.in</a></li>
+            <li><a href="#" onclick="openModal('beta-modal'); return false;" class="text-brand-red hover:underline font-semibold">Official Telegram Channel</a></li>
+            <li><span class="text-stone-500">Guwahati, Assam, PIN 781001</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar with Regional Sign-off -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-stone-400">
+        <div>
+          <p>© 2025 PYQScore Technologies. All rights reserved.</p>
+          <p class="text-[11px] text-stone-500 mt-0.5">Disclaimer: PYQScore is an independent educational tool and is not officially affiliated with SLRC or the Government of Assam.</p>
+        </div>
+        
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-900 border border-stone-800 text-stone-300 font-medium">
+          <span>Made with</span>
+          <span class="text-brand-red">❤️</span>
+          <span>in Assam for state aspirants</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING BOTTOM APP BAR FOR MOBILE (High-conversion sticky CTA) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-beige-border px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+    <div class="flex items-center gap-2.5">
+      <img src="./asset/ADRE 3.0 (1).png" alt="PYQScore App" class="w-9 h-9 object-contain">
+      <div>
+        <div class="text-xs font-bold text-brand-dark flex items-center gap-1.5">
+          <span>PYQScore App</span>
+          <span class="px-1.5 py-0.2 rounded bg-brand-redLight text-brand-red text-[9px] font-bold">FREE DEMO</span>
+        </div>
+        <span class="text-[10px] text-brand-muted">40k+ MCQs • -0.25 Negative</span>
+      </div>
+    </div>
+    <button onclick="openModal('download-modal')" class="px-4 py-2 bg-brand-red text-white font-black text-xs rounded-xl shadow-brand-glow flex items-center gap-1.5 active:scale-95">
+      <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.86.58-1.57 1.4-1.87L14.7 12 4.4 22.37c-.82-.3-1.4-1.01-1.4-1.87zm14.3-10.9L19.9 11c.8.5.8 1.4 0 1.9l-2.6 1.4-3.5-3.5 3.5-3.5zM4.7 2.1l11.1 6.3-2.9 2.9-8.2-9.2zm0 19.8l8.2-9.2 2.9 2.9-11.1 6.3z"/></svg>
+      <span>Install App</span>
+    </button>
+  </div>
+
+  <!-- POPUP TOAST SIMULATION (Social Proof Notifications) -->
+  <div id="live-toast" class="fixed bottom-16 sm:bottom-6 left-4 sm:left-6 z-50 card-beige rounded-2xl p-3 sm:p-3.5 border-2 border-brand-red/30 shadow-warm-lg transition-all duration-500 transform translate-y-24 opacity-0 pointer-events-none max-w-[280px] sm:max-w-xs flex items-center gap-3">
+    <div class="w-8 h-8 rounded-full bg-brand-redLight text-brand-red flex items-center justify-center font-bold text-xs shrink-0 border border-brand-red/30">
+      ⚡
+    </div>
+    <div class="text-xs">
+      <p class="font-bold text-brand-dark" id="toast-title">Debabrat from Nagaon</p>
+      <p class="text-[11px] text-brand-muted" id="toast-desc">Just joined ADRE Season Pass • 2m ago</p>
+    </div>
+  </div>
+
+  <!-- MODAL 1: GOOGLE PLAY / DOWNLOAD MODAL -->
+  <div id="download-modal" class="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="card-beige max-w-md w-full rounded-3xl p-6 sm:p-8 border-2 border-brand-red/40 shadow-2xl relative space-y-6">
+      
+      <!-- Close button -->
+      <button onclick="closeModal('download-modal')" class="absolute top-5 right-5 text-brand-muted hover:text-brand-dark text-lg font-bold">
+        ✕
+      </button>
+
+      <div class="text-center space-y-2">
+        <img src="./asset/ADRE 3.0 (1).png" alt="PYQScore Logo" class="w-16 h-16 mx-auto object-contain">
+        <h3 class="text-xl font-extrabold text-brand-dark">Get PYQScore for Android</h3>
+        <p class="text-xs text-brand-slate">
+          Direct Google Play Store download or instant APK install link via WhatsApp/SMS.
+        </p>
+      </div>
+
+      <!-- Option 1: Direct Play Store Button -->
+      <a href="https://play.google.com/store" target="_blank" class="w-full flex items-center justify-center bg-transparent p-0 transition-transform hover:scale-105 active:scale-95">
+        <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
+      </a>
+
+      <div class="flex items-center gap-3 text-xs text-brand-muted">
+        <div class="h-px bg-beige-border flex-grow"></div>
+        <span>OR GET DIRECT APK LINK</span>
+        <div class="h-px bg-beige-border flex-grow"></div>
+      </div>
+
+      <!-- Quick Lead Form for direct APK send -->
+      <form onsubmit="handleApkSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-brand-dark mb-1">Your WhatsApp Number (Assam Aspirant)</label>
+          <div class="flex">
+            <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-beige-border bg-beige-200 text-brand-slate text-xs font-mono font-bold">+91</span>
+            <input type="tel" id="user-phone-input" required placeholder="98640 XXXXX" maxlength="10" class="w-full bg-white border border-beige-border rounded-r-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red font-mono">
+          </div>
+        </div>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-brand-dark hover:bg-stone-800 text-white font-extrabold text-xs flex items-center justify-center gap-2 transition-colors">
+          <span>Send Download Link & Free Mock on WhatsApp</span>
+          <span>→</span>
+        </button>
+      </form>
+
+      <div id="apk-success-msg" class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-300 text-xs text-center font-bold">
+        🎉 Direct download link sent! Check your WhatsApp.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL 2: JOIN CLOSED BETA / WAITLIST -->
+  <div id="beta-modal" class="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="card-beige max-w-md w-full rounded-3xl p-6 sm:p-8 border-2 border-brand-red/40 shadow-2xl relative space-y-5">
+      
+      <button onclick="closeModal('beta-modal')" class="absolute top-5 right-5 text-brand-muted hover:text-brand-dark text-lg font-bold">
+        ✕
+      </button>
+
+      <div class="space-y-2 text-center">
+        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase bg-brand-redLight text-brand-red border border-brand-red/30">
+          Batch 04 Enrolling
+        </span>
+        <h3 class="text-xl font-extrabold text-brand-dark">Join Closed Telegram Beta</h3>
+        <p class="text-xs text-brand-slate">
+          Get early access to weekly 150-question mock PDFs and direct mentoring sessions.
+        </p>
+      </div>
+
+      <form onsubmit="handleBetaSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-brand-dark mb-1">Your Name</label>
+          <input type="text" id="beta-name" required placeholder="e.g. Partha Pratim Sarma" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-dark mb-1">Target Exam</label>
+          <select id="beta-exam" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
+            <option>ADRE 3.0 Grade 3 (Graduate & HSSLC)</option>
+            <option>ADRE 3.0 Grade 4 (Class 8 & 10)</option>
+            <option>Assam Police UB / AB Constable</option>
+            <option>Assam Police SI / Forest Guard</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-dark mb-1">WhatsApp / Telegram Mobile Number</label>
+          <input type="tel" id="beta-phone" required placeholder="10-digit number" maxlength="10" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red font-mono">
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-xs shadow-brand-glow transition-all">
+          Join 1,840+ Aspirants Now →
+        </button>
+      </form>
+
+      <div id="beta-success-msg" class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-300 text-xs text-center font-bold">
+        ✅ Welcome aboard! Telegram invite link has been generated.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL 3: MENTOR / EDUCATOR PARTNER -->
+  <div id="mentor-modal" class="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="card-beige max-w-lg w-full rounded-3xl p-6 sm:p-8 border-2 border-brand-red/40 shadow-2xl relative space-y-5">
+      
+      <button onclick="closeModal('mentor-modal')" class="absolute top-5 right-5 text-brand-muted hover:text-brand-dark text-lg font-bold">
+        ✕
+      </button>
+
+      <div class="space-y-1">
+        <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-brand-redLight text-brand-red uppercase">Partner Program</span>
+        <h3 class="text-xl font-bold text-brand-dark">Join as an Assam Mentor Partner</h3>
+        <p class="text-xs text-brand-slate">
+          Distribute customized test series to your students and receive ₹20–₹40 per student payout.
+        </p>
+      </div>
+
+      <form onsubmit="handleMentorSubmit(event)" class="space-y-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brand-dark mb-1">Teacher / Channel Name</label>
+            <input type="text" id="mentor-name" required placeholder="e.g. Lakshya Assam Classes" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-dark mb-1">Channel / Group Link</label>
+            <input type="text" id="mentor-link" required placeholder="YouTube or Telegram link" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brand-dark mb-1">Subscriber / Student Count</label>
+            <select id="mentor-size" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
+              <option>1,000 - 5,000 Students</option>
+              <option>5,000 - 20,000 Students</option>
+              <option>20,000 - 100,000+ Students</option>
+              <option>Offline Coaching Institute</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-dark mb-1">Your Direct WhatsApp</label>
+            <input type="tel" id="mentor-phone" required placeholder="10-digit number" maxlength="10" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red font-mono">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-brand-dark mb-1">Requested Referral Code Prefix</label>
+          <input type="text" id="mentor-code" placeholder="e.g. LAKHYA10" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs uppercase tracking-wider focus:outline-none focus:border-brand-red font-mono">
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-xs shadow-brand-glow transition-all">
+          Submit Partnership Application →
+        </button>
+      </form>
+
+      <div id="mentor-success-msg" class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-300 text-xs text-center font-bold">
+        ✅ Application received! Our creator manager will message you on WhatsApp within 2 hours.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & INTERACTIONS -->
+  <script>
+    // --------------------------------------------------------------------------
+    // 1. Interactive Demo Questions Data (Bilingual: Assamese & English)
+    // --------------------------------------------------------------------------
+    const demoQuestions = [
+      {
+        id: 1,
+        topic: "Assam History & Modern Treaties",
+        yearBadge: "SLRC 2022 Verified",
+        question: {
+          as: "প্ৰথম ইংগ-বাৰ্মিজ যুদ্ধৰ অন্ত পেলাই কোন চনত ঐতিহাসিক ইয়াণ্ডাবু সন্ধি (Treaty of Yandabo) স্বাক্ষৰিত হৈছিল?",
+          en: "In which year was the historic Treaty of Yandabo signed, marking the end of the First Anglo-Burmese War?"
+        },
+        options: [
+          { key: "A", as: "১৮২৪ (২৪ জানুৱাৰী)", en: "1824 (24th January)", correct: false },
+          { key: "B", as: "১৮২৬ (২৪ ফেব্ৰুৱাৰী)", en: "1826 (24th February)", correct: true },
+          { key: "C", as: "১৮২৮ (১৬ মাৰ্চ)", en: "1828 (16th March)", correct: false },
+          { key: "D", as: "১৮৩৬ (১০ এপ্ৰিল)", en: "1836 (10th April)", correct: false }
+        ],
+        explanation: {
+          as: "<strong>সঠিক উত্তৰ: B (১৮২৬ চনৰ ২৪ ফেব্ৰুৱাৰী)</strong><br><br>• এই সন্ধি ব্ৰিটিছ ইষ্ট ইণ্ডিয়া কোম্পানী আৰু বাৰ্মাৰ ৰজাৰ মাজত স্বাক্ষৰিত হৈছিল।<br>• ইয়াৰ জৰিয়তে অসম আৰু মণিপুৰত বাৰ্মিজ আধিপত্যৰ অন্ত পৰে আৰু ব্ৰিটিছ শাসন আৰম্ভ হয়।<br>• <em>ট্ৰেক্টিক নোট:</em> প্ৰায়ে ১৮২৪ (যুদ্ধ আৰম্ভ হোৱা চন) আৰু ১৮২৬ (সন্ধি স্বাক্ষৰিত চন) ৰ মাজত ছাত্ৰ-ছাত্ৰী বিভ্ৰান্ত হয়।",
+          en: "<strong>Correct Answer: B (24th February 1826)</strong><br><br>• Signed between British East India Company and King of Ava (Burma).<br>• This treaty ended Burmese rule in Assam and paved the way for British administration.<br>• <em>Exam Trap Alert:</em> Candidates often confuse 1824 (war outbreak) with 1826 (treaty signing)."
+        }
+      },
+      {
+        id: 2,
+        topic: "Indian Polity & Assam State Governance",
+        yearBadge: "SLRC 2024 Verified",
+        question: {
+          as: "ভাৰতীয় সংবিধানৰ কোনটো অনুচ্ছেদে ৰাজ্যসমূহত বিধান পৰিষদ (Legislative Council) গঠন বা বিলোপৰ ব্যৱস্থা কৰে?",
+          en: "Which Article of the Indian Constitution provides for the creation or abolition of Legislative Councils in states?"
+        },
+        options: [
+          { key: "A", as: "অনুচ্ছেদ ১৬৮", en: "Article 168", correct: false },
+          { key: "B", as: "অনুচ্ছেদ ১৬৯", en: "Article 169", correct: true },
+          { key: "C", as: "অনুচ্ছেদ ১৭০", en: "Article 170", correct: false },
+          { key: "D", as: "অনুচ্ছেদ ১৭১", en: "Article 171", correct: false }
+        ],
+        explanation: {
+          as: "<strong>সঠিক উত্তৰ: B (অনুচ্ছেদ ১৬৯)</strong><br><br>• অনুচ্ছেদ ১৬৯ অনুসৰি যদি ৰাজ্যিক বিধানসভাই বিশেষ সংখ্যাগৰিষ্ঠতাৰে প্ৰস্তাৱ গৃহীত কৰে, তেন্তে সংসদে আইন প্ৰণয়ন কৰি বিধান পৰিষদ সৃষ্টি বা বিলোপ কৰিব পাৰে।<br>• অসমত পূৰ্বে বিধান পৰিষদ আছিল যদিও ১৯৬৯ চনত বিলুপ্ত কৰা হয়।",
+          en: "<strong>Correct Answer: B (Article 169)</strong><br><br>• Article 169 empowers Parliament to abolish or create a Legislative Council if the State Legislative Assembly passes a resolution by a special majority.<br>• Assam had a bicameral legislature until the Legislative Council was abolished in 1969."
+        }
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let currentLanguage = 'as'; // 'as' or 'en'
+    let questionAnswered = false;
+    let totalScore = 0.00;
+
+    // Render interactive question
+    function renderDemoQuestion() {
+      const q = demoQuestions[currentQuestionIndex];
+      questionAnswered = false;
+
+      // Update question header info
+      document.getElementById('demo-q-number').textContent = `Question ${currentQuestionIndex + 1} of ${demoQuestions.length} (${q.yearBadge})`;
+      document.getElementById('demo-question-text').textContent = q.question[currentLanguage];
+
+      // Update language toggle button label
+      const langLabel = document.getElementById('lang-btn-label');
+      if (currentLanguage === 'as') {
+        langLabel.innerHTML = 'অসমীয়া <span class="text-brand-muted font-normal">(Click for ENG)</span>';
+      } else {
+        langLabel.innerHTML = 'English <span class="text-brand-muted font-normal">(অসমীয়ালৈ সলনি)</span>';
+      }
+
+      // Hide feedback box
+      const feedbackBox = document.getElementById('demo-feedback-box');
+      feedbackBox.classList.add('hidden');
+      feedbackBox.innerHTML = '';
+
+      // Render options
+      const container = document.getElementById('demo-options-container');
+      container.innerHTML = '';
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `option-btn w-full p-4 rounded-xl bg-white border border-beige-border text-left flex items-center justify-between text-brand-dark text-sm font-semibold hover:border-brand-red focus:outline-none shadow-warm-sm`;
+        btn.id = `demo-opt-${idx}`;
+        btn.onclick = () => handleOptionClick(idx);
+
+        const leftSpan = document.createElement('div');
+        leftSpan.className = 'flex items-center gap-3';
+        leftSpan.innerHTML = `
+          <span class="w-7 h-7 rounded-lg bg-beige-200 border border-beige-border flex items-center justify-center text-xs font-bold font-mono text-brand-dark">
+            ${opt.key}
+          </span>
+          <span class="text-sm sm:text-base">${opt[currentLanguage]}</span>
+        `;
+
+        const rightSpan = document.createElement('span');
+        rightSpan.className = 'opt-status-icon text-xs text-brand-muted font-mono font-medium';
+        rightSpan.textContent = 'Tap to answer';
+
+        btn.appendChild(leftSpan);
+        btn.appendChild(rightSpan);
+        container.appendChild(btn);
+      });
+
+      // Update tab styles
+      document.getElementById('q-tab-0').className = currentQuestionIndex === 0 
+        ? "px-2.5 py-1 rounded-md font-bold text-white bg-brand-red transition-colors shadow-xs" 
+        : "px-2.5 py-1 rounded-md font-medium text-brand-slate hover:text-brand-dark transition-colors";
+      document.getElementById('q-tab-1').className = currentQuestionIndex === 1 
+        ? "px-2.5 py-1 rounded-md font-bold text-white bg-brand-red transition-colors shadow-xs" 
+        : "px-2.5 py-1 rounded-md font-medium text-brand-slate hover:text-brand-dark transition-colors";
+    }
+
+    // Handle user clicking an option
+    function handleOptionClick(selectedIndex) {
+      if (questionAnswered) return;
+      questionAnswered = true;
+
+      const q = demoQuestions[currentQuestionIndex];
+      const selectedOpt = q.options[selectedIndex];
+      const feedbackBox = document.getElementById('demo-feedback-box');
+      const scoreElem = document.getElementById('simulated-score');
+      const scoreStatus = document.getElementById('score-status-text');
+
+      // Lock buttons
+      q.options.forEach((opt, idx) => {
+        const btn = document.getElementById(`demo-opt-${idx}`);
+        btn.classList.add('locked');
+        btn.onclick = null;
+
+        if (opt.correct) {
+          // Highlight correct answer in emerald green
+          btn.classList.remove('bg-white');
+          btn.classList.add('bg-emerald-50', 'border-2', 'border-emerald-600', 'text-emerald-900');
+          btn.querySelector('.opt-status-icon').innerHTML = '<span class="text-emerald-700 font-bold">✓ CORRECT (+1.00)</span>';
+        } else if (idx === selectedIndex && !opt.correct) {
+          // Highlight user's wrong answer in brand-red (#F04156)
+          btn.classList.remove('bg-white');
+          btn.classList.add('bg-brand-redLight', 'border-2', 'border-brand-red', 'text-brand-red');
+          btn.querySelector('.opt-status-icon').innerHTML = '<span class="text-brand-red font-bold">✕ WRONG (-0.25)</span>';
+        }
+      });
+
+      // Score calculation & feedback display
+      if (selectedOpt.correct) {
+        totalScore += 1.00;
+        feedbackBox.className = "mt-6 p-5 rounded-2xl border-2 border-emerald-500/40 bg-emerald-50 text-emerald-950 text-xs sm:text-sm space-y-2 block";
+        feedbackBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-emerald-800 text-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span>Excellent! +1.00 Marks Added</span>
+          </div>
+          <div class="text-emerald-900 leading-relaxed pt-1">${q.explanation[currentLanguage]}</div>
+          <div class="pt-2 text-[11px] text-emerald-700 font-mono font-bold">Status: Saved to Mastered Topics Deck</div>
+        `;
+        scoreStatus.innerHTML = '<span class="text-emerald-700 font-bold">+1.00 Awarded</span>';
+      } else {
+        totalScore -= 0.25;
+        feedbackBox.className = "mt-6 p-5 rounded-2xl border-2 border-brand-red/40 bg-brand-redLight text-brand-dark text-xs sm:text-sm space-y-2 block";
+        feedbackBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-brand-red text-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            <span>Negative Marking Triggered: -0.25 Marks</span>
+          </div>
+          <div class="text-brand-slate leading-relaxed pt-1">${q.explanation[currentLanguage]}</div>
+          <div class="pt-2 text-[11px] text-brand-red font-mono font-bold flex items-center gap-1">
+            <span>⚠️ Automatically added to your "Mistake Vault" for re-testing.</span>
+          </div>
+        `;
+        scoreStatus.innerHTML = '<span class="text-brand-red font-bold">-0.25 Deducted (SLRC Rule)</span>';
+      }
+
+      scoreElem.textContent = (totalScore >= 0 ? "+" : "") + totalScore.toFixed(2);
+      scoreElem.className = totalScore >= 0 ? "text-emerald-600 font-mono font-bold text-sm" : "text-brand-red font-mono font-bold text-sm";
+    }
+
+    function toggleDemoLanguage() {
+      currentLanguage = (currentLanguage === 'as') ? 'en' : 'as';
+      renderDemoQuestion();
+    }
+
+    function switchDemoQuestion(index) {
+      currentQuestionIndex = index;
+      renderDemoQuestion();
+    }
+
+    function resetDemoQuestion() {
+      renderDemoQuestion();
+      document.getElementById('score-status-text').textContent = 'Select an option to evaluate';
+    }
+
+    // --------------------------------------------------------------------------
+    // 2. Interactive Referral Code Discount Logic
+    // --------------------------------------------------------------------------
+    let referralApplied = false;
+
+    function applyReferralCode() {
+      const input = document.getElementById('referral-input');
+      const feedback = document.getElementById('referral-feedback');
+      const code = input.value.trim().toUpperCase();
+
+      if (!code) {
+        feedback.className = "text-[11px] text-brand-red font-medium block";
+        feedback.textContent = "Please enter a mentor code (e.g. ASSAM10, LAKHYA, DHEMAJI)";
+        return;
+      }
+
+      if (referralApplied) {
+        feedback.className = "text-[11px] text-amber-600 font-medium block";
+        feedback.textContent = "Referral discount already applied!";
+        return;
+      }
+
+      // Valid codes simulate ₹10 instant discount
+      referralApplied = true;
+      document.getElementById('season-pass-price').textContent = "₹239";
+      document.getElementById('season-pass-old-price').textContent = "₹249";
+      document.getElementById('season-discount-tag').textContent = "Referral: ₹10 OFF";
+      
+      feedback.className = "text-[11px] text-emerald-700 font-bold block";
+      feedback.innerHTML = `🎉 Code <strong>"${code}"</strong> verified! Instant ₹10 mentor discount applied. Final price: ₹239`;
+      input.disabled = true;
+    }
+
+    // --------------------------------------------------------------------------
+    // 3. FAQ Accordion Toggle
+    // --------------------------------------------------------------------------
+    function toggleFaq(id) {
+      const content = document.getElementById(`faq-content-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all others
+      for (let i = 1; i <= 5; i++) {
+        const c = document.getElementById(`faq-content-${i}`);
+        const ic = document.getElementById(`faq-icon-${i}`);
+        if (c && ic) {
+          c.classList.add('hidden');
+          ic.textContent = '+';
+          ic.classList.remove('bg-brand-redLight', 'text-brand-red');
+        }
+      }
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '✕';
+        icon.classList.add('bg-brand-redLight', 'text-brand-red');
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 4. Modals Controller
+    // --------------------------------------------------------------------------
+    function openModal(modalId) {
+      const m = document.getElementById(modalId);
+      if (m) {
+        m.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const m = document.getElementById(modalId);
+      if (m) {
+        m.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close on background click
+    window.onclick = function(event) {
+      if (event.target.id === 'download-modal') closeModal('download-modal');
+      if (event.target.id === 'beta-modal') closeModal('beta-modal');
+      if (event.target.id === 'mentor-modal') closeModal('mentor-modal');
+    };
+
+    // Form handlers
+    function handleApkSubmit(e) {
+      e.preventDefault();
+      document.getElementById('apk-success-msg').classList.remove('hidden');
+      setTimeout(() => {
+        closeModal('download-modal');
+        document.getElementById('apk-success-msg').classList.add('hidden');
+      }, 3500);
+    }
+
+    function handleBetaSubmit(e) {
+      e.preventDefault();
+      document.getElementById('beta-success-msg').classList.remove('hidden');
+      setTimeout(() => {
+        closeModal('beta-modal');
+        document.getElementById('beta-success-msg').classList.add('hidden');
+      }, 3500);
+    }
+
+    function handleMentorSubmit(e) {
+      e.preventDefault();
+      document.getElementById('mentor-success-msg').classList.remove('hidden');
+      setTimeout(() => {
+        closeModal('mentor-modal');
+        document.getElementById('mentor-success-msg').classList.add('hidden');
+      }, 3500);
+    }
+
+    // --------------------------------------------------------------------------
+    // 5. Mobile Menu Toggle
+    // --------------------------------------------------------------------------
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobile-nav');
+      const hamburger = document.getElementById('hamburger-icon');
+      const close = document.getElementById('close-icon');
+
+      if (nav.classList.contains('hidden')) {
+        nav.classList.remove('hidden');
+        hamburger.classList.add('hidden');
+        close.classList.remove('hidden');
+      } else {
+        nav.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+        close.classList.add('hidden');
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 6. Social Proof Live Toasts Simulator
+    // --------------------------------------------------------------------------
+    const toastData = [
+      { name: "Debabrat B.", location: "Nagaon", action: "unlocked ADRE Season Pass", time: "2 mins ago" },
+      { name: "Ranjit K.", location: "Dibrugarh", action: "scored 138.5 in Sunday Mock #04", time: "4 mins ago" },
+      { name: "Ananya S.", location: "Guwahati", action: "cleared 45 questions in Mistake Vault", time: "6 mins ago" },
+      { name: "Pranjal D.", location: "Jorhat", action: "applied Mentor code LAKHYA", time: "9 mins ago" },
+      { name: "Mridul H.", location: "Tezpur", action: "completed Assam Geography Drill 03", time: "11 mins ago" }
+    ];
+
+    let toastIdx = 0;
+    function showLiveToast() {
+      const toast = document.getElementById('live-toast');
+      const item = toastData[toastIdx % toastData.length];
+      toastIdx++;
+
+      document.getElementById('toast-title').textContent = `${item.name} (${item.location})`;
+      document.getElementById('toast-desc').textContent = `${item.action} • ${item.time}`;
+
+      // Slide in
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      // Slide out after 4 seconds
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 4500);
+    }
+
+    // Interval for live toast
+    setInterval(showLiveToast, 12000);
+    setTimeout(showLiveToast, 3000);
+
+    // --------------------------------------------------------------------------
+    // 7. Mock Countdown Timer on Phone Mockup
+    // --------------------------------------------------------------------------
+    let totalSeconds = 6135; // 01:42:15
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+        const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const seconds = String(totalSeconds % 60).padStart(2, '0');
+        const timerElem = document.getElementById('hero-phone-timer');
+        if (timerElem) timerElem.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+    }, 1000);
+
+    // Initialize the demo on load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderDemoQuestion();
+    });
+  </script>
+</body>
+</html>
