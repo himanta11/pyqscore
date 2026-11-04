@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://pyqscore.in/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/hero%20img.png</image:loc>
+      <image:title>PYQScore Assam ADRE 3.0 Mock Test Engine</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Listing Hub -->
+  <url>
+    <loc>https://pyqscore.in/blog.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Article 1: How to Prepare for ADRE 3.0 2026 -->
+  <url>
+    <loc>https://pyqscore.in/blog-how-to-prepare-for-adre-3.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
+      <image:title>How to Prepare for ADRE 3.0 2026 Strategy Guide</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Article 2: ADRE 3.0 Mock Test Online 2026 -->
+  <url>
+    <loc>https://pyqscore.in/blog-adre-3-mock-test-online-2026.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
+      <image:title>ADRE 3.0 Mock Test Online 2026 Grade 3 and Grade 4</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Article 3: Assam Police Constable Exam Guide -->
+  <url>
+    <loc>https://pyqscore.in/blog-assam-police-constable-exam.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/assam-police-constable-exam-banner.jpg</image:loc>
+      <image:title>Assam Police Constable Exam Preparation Guide SLPRB</image:title>
+    </image:image>
+  </url>
+
+  <!-- Affiliate / Partner Program -->
+  <url>
+    <loc>https://pyqscore.in/affiliate.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
