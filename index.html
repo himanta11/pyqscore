@@ -173,15 +173,19 @@
         </a>
         <a href="#syllabus" class="hover:text-brand-red transition-colors">Syllabus Coverage</a>
         <a href="#pricing" class="hover:text-brand-red transition-colors">Passes</a>
-        <a href="#affiliate" class="hover:text-brand-red transition-colors">Educators / Earn</a>
+        <a href="affiliate.html" class="hover:text-brand-red transition-colors flex items-center gap-1.5 font-bold text-brand-red">
+          <span>Affiliate Program</span>
+          <span class="text-[10px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded border border-emerald-300 font-bold">Earn ₹40+</span>
+        </a>
+        <a href="blog.html" class="hover:text-brand-red transition-colors">Blog</a>
         <a href="#faqs" class="hover:text-brand-red transition-colors">FAQ</a>
       </nav>
 
       <!-- Right Action CTA -->
       <div class="hidden sm:flex items-center">
-        <button onclick="openModal('download-modal')" class="inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
           <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-10 w-auto">
-        </button>
+        </a>
       </div>
 
       <!-- Mobile Hamburger Button -->
@@ -200,12 +204,13 @@
       <a href="#demo" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Interactive Demo Drill</a>
       <a href="#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Syllabus Breakdown</a>
       <a href="#pricing" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Pricing & Passes</a>
-      <a href="#affiliate" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Teacher & Mentor Program</a>
+      <a href="affiliate.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red hover:text-brand-red text-sm font-bold flex items-center justify-between"><span>Affiliate Program (Earn ₹40/Student)</span><span class="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">LIVE TRACKER</span></a>
+      <a href="blog.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Preparation Blog & Guides</a>
       <a href="#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Frequently Asked Questions</a>
       <div class="pt-3 border-t border-beige-border flex flex-col gap-2">
-        <button onclick="openModal('download-modal'); toggleMobileNav();" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
+        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" onclick="toggleMobileNav()" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
           <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
-        </button>
+        </a>
       </div>
     </div>
   </header>
@@ -252,9 +257,9 @@
             <div class="flex flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-4 pt-2 w-full max-w-md sm:max-w-none mx-auto lg:mx-0">
               
               <!-- Primary Google Play Button (Clean image as button, no background box) -->
-              <button onclick="openModal('download-modal')" class="flex-1 sm:flex-initial inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+              <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
                 <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-11 sm:h-14 w-auto">
-              </button>
+              </a>
 
               <!-- Secondary Free Demo CTA -->
               <a href="#demo" class="flex-1 sm:flex-initial px-2 sm:px-6 h-11 sm:h-14 rounded-xl bg-white hover:bg-beige-50 border border-beige-border hover:border-brand-red text-brand-dark font-bold flex items-center justify-center gap-1.5 sm:gap-2 shadow-warm-sm transition-all text-center text-[11px] sm:text-sm leading-tight">
@@ -419,6 +424,14 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- View All Blogs Link Button -->
+        <div class="pt-10 text-center">
+          <a href="blog.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-white hover:bg-beige-100 text-brand-dark hover:text-brand-red border border-beige-border shadow-warm-sm font-extrabold text-sm transition-all hover:scale-105 active:scale-95">
+            <span>Explore All Preparation Guides & Study Hub</span>
+            <svg class="w-4 h-4 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
         </div>
 
       </div>
@@ -1067,6 +1080,164 @@
       </div>
     </section>
 
+    <!-- 9. PREPARATION BLOG & GUIDES SECTION -->
+    <section id="blog" class="py-24 bg-beige-canvas relative border-t border-beige-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center space-y-4 mb-14">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
+            Exam Preparation Hub
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            ADRE 3.0 Preparation Guides & Mock Insights
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            In-depth subject strategies, syllabus breakdowns, and active-recall test tactics to help you secure a top rank in Assam government recruitments.
+          </p>
+        </div>
+
+        <!-- Featured Guide Showcase Card (Hero Article) -->
+        <div class="card-beige rounded-3xl p-6 sm:p-10 border-2 border-brand-red/30 bg-gradient-to-br from-white via-beige-50 to-beige-100 shadow-warm-lg mb-8 relative overflow-hidden">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-5">
+              
+              <!-- Badges -->
+              <div class="flex flex-wrap items-center gap-2.5">
+                <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-brand-red text-white">
+                  Featured Guide 2026
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-white border border-beige-border text-brand-dark">
+                  SLRC Grade 3 & Grade 4
+                </span>
+                <span class="text-xs text-brand-muted flex items-center gap-1 font-medium">
+                  <svg class="w-3.5 h-3.5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  8 min read • Verified Strategy
+                </span>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-2xl sm:text-3xl lg:text-4xl font-black text-brand-dark tracking-tight leading-snug">
+                <a href="blog-adre-3-mock-test-online-2026.html" class="hover:text-brand-red transition-colors">
+                  ADRE 3.0 Mock Test Online 2026 – Practice Grade 3 & Grade 4 Questions with PYQScore
+                </a>
+              </h3>
+
+              <!-- Excerpt -->
+              <p class="text-sm sm:text-base text-brand-slate leading-relaxed">
+                Are you preparing for the <strong class="text-brand-dark font-bold">Assam Direct Recruitment Examination (ADRE) 3.0</strong>? Completing the syllabus is only half the battle. Discover why regular online mock tests, subject-wise objective questions, and understanding <span class="px-1.5 py-0.5 rounded bg-brand-redLight text-brand-red font-mono font-bold">-0.25 negative marking</span> make the difference between qualification and missing the cutoff.
+              </p>
+
+              <!-- Topic Highlights Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1 text-xs">
+                <div class="p-2.5 rounded-xl bg-white border border-beige-border">
+                  <span class="font-bold text-brand-dark block">Grade 3 & 4 Pattern</span>
+                  <span class="text-[11px] text-brand-muted">Class 8, 10 & Degree</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white border border-beige-border">
+                  <span class="font-bold text-brand-dark block">Assam GK & History</span>
+                  <span class="text-[11px] text-brand-muted">Ahom, Rivers & Culture</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white border border-beige-border">
+                  <span class="font-bold text-brand-dark block">-0.25 Marking Rules</span>
+                  <span class="text-[11px] text-brand-muted">Accuracy conditioning</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white border border-beige-border">
+                  <span class="font-bold text-brand-dark block">Bilingual Tests</span>
+                  <span class="text-[11px] text-brand-muted">অসমীয়া & English</span>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <a href="blog-adre-3-mock-test-online-2026.html" class="px-6 py-3.5 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-extrabold text-xs shadow-brand-glow transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+                  <span>Read Complete 2026 Guide</span>
+                  <span>→</span>
+                </a>
+                <a href="blog-adre-3-mock-test-online-2026.html#faqs" class="px-5 py-3.5 rounded-xl bg-white hover:bg-beige-100 text-brand-dark font-bold text-xs border border-beige-border shadow-warm-sm transition-all flex items-center gap-2 active:scale-95">
+                  <span>View 10 Exam FAQs</span>
+                  <span>❓</span>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Banner Image Right Column -->
+            <div class="lg:col-span-4 flex flex-col items-center justify-center space-y-4">
+              <a href="blog-adre-3-mock-test-online-2026.html" class="block overflow-hidden rounded-2xl border-2 border-brand-red/30 shadow-warm-lg hover:scale-[1.02] transition-transform group">
+                <img src="./asset/adre-3-mock-test-2026-banner.jpg" alt="ADRE 3.0 Mock Test 2026 - Practice Grade 3 & Grade 4 Questions" class="w-full h-auto object-cover rounded-2xl">
+              </a>
+              <div class="flex items-center gap-2">
+                <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center transition-transform hover:scale-105 active:scale-95" title="Get PYQScore on Google Play">
+                  <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-10 w-auto">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 2 Companion Prep Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="card-beige rounded-2xl overflow-hidden border border-beige-border bg-white hover:border-brand-red/40 transition-colors flex flex-col justify-between">
+            <a href="blog-assam-police-constable-exam.html" class="block aspect-[16/9] overflow-hidden bg-brand-slate">
+              <img src="./asset/assam-police-constable-exam-banner.jpg" alt="Assam Police Constable Exam Guide" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-brand-redLight text-brand-red uppercase">New Recruitment Guide</span>
+                  <span class="text-xs text-brand-muted">SLPRB Constable</span>
+                </div>
+                <h4 class="text-lg font-bold text-brand-dark">
+                  <a href="blog-assam-police-constable-exam.html" class="hover:text-brand-red transition-colors">
+                    How to Crack Assam Police Constable Exam: Syllabus, Physical Standards & Mock Test Strategy →
+                  </a>
+                </h4>
+                <p class="text-xs text-brand-slate leading-relaxed">
+                  Full breakdown of PST height/chest standards, PET 3200m/1600m running benchmarks, 100-question written syllabus (no negative marking), and classroom mentorship with Scholar Academy.
+                </p>
+              </div>
+              <div class="pt-2 flex items-center justify-between border-t border-beige-border/60">
+                <a href="blog-assam-police-constable-exam.html" class="text-xs font-bold text-brand-red hover:underline flex items-center gap-1">
+                  <span>Read Police Constable Guide</span>
+                  <span>→</span>
+                </a>
+                <span class="text-[11px] text-brand-muted font-medium">15 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-beige rounded-2xl p-6 border border-beige-border bg-white hover:border-brand-red/40 transition-colors space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-stone-100 text-stone-800 uppercase">Exam Tactics</span>
+              <span class="text-xs text-brand-muted">-0.25 Marking</span>
+            </div>
+            <h4 class="text-lg font-bold text-brand-dark">
+              <a href="blog-adre-3-mock-test-online-2026.html#negative-marking" class="hover:text-brand-red transition-colors">
+                Negative Marking & The Mistake Vault: Turning Wrong Answers into Rank →
+              </a>
+            </h4>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Why blind guesses ruin cutoffs: understand how negative marking penalises uncertainty, and see how PYQScore's automated Mistake Vault forces you to re-test errors until 100% mastery.
+            </p>
+            <div class="pt-1">
+              <a href="blog-adre-3-mock-test-online-2026.html#negative-marking" class="text-xs font-bold text-brand-red hover:underline flex items-center gap-1">
+                <span>Read Marking Analysis</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- FINAL HIGH-IMPACT CTA STRIP -->
     <section class="py-16 bg-beige-200 border-t border-beige-border">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
@@ -1076,9 +1247,9 @@
         <p class="text-brand-slate text-sm sm:text-base max-w-2xl mx-auto">
           Join 15,000+ candidates who switched from passive PDF reading to active-recall practice. Available now for Android.
         </p>
-          <button onclick="openModal('download-modal')" class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
+          <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95">
             <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-14 w-auto">
-          </button>
+          </a>
           <button onclick="openModal('beta-modal')" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white hover:bg-beige-50 text-brand-dark font-bold text-sm border border-beige-border shadow-warm-sm transition-all">
             Join Telegram Study Group
           </button>
@@ -1106,10 +1277,10 @@
           </p>
 
           <!-- Play store badge pill -->
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-stone-900 border border-stone-800 text-white">
-            <span class="w-2 h-2 rounded-full bg-brand-red"></span>
-            <span class="text-[11px] font-mono">Build 2.4.1 (Stable Android Release)</span>
-          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-stone-900 border border-stone-800 text-white hover:border-brand-red transition-colors group">
+            <span class="w-2 h-2 rounded-full bg-brand-red group-hover:animate-ping"></span>
+            <span class="text-[11px] font-mono">Build 2.4.1 (Get on Google Play ↗)</span>
+          </a>
         </div>
 
         <!-- Col 2: Exam Drill Sets -->
@@ -1128,6 +1299,11 @@
         <div class="space-y-3">
           <h4 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h4>
           <ul class="space-y-2 text-stone-400">
+            <li><a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="hover:text-brand-red transition-colors text-white font-bold flex items-center gap-1.5"><span>Google Play Store</span><span class="text-[9px] px-1 rounded bg-stone-800 text-brand-red font-bold">App</span></a></li>
+            <li><a href="blog-how-to-prepare-for-adre-3.html" class="hover:text-brand-red transition-colors text-brand-red font-bold">How to Prepare for ADRE 3.0</a></li>
+            <li><a href="blog-adre-3-mock-test-online-2026.html" class="hover:text-brand-red transition-colors">ADRE 3.0 Mock Test Guide</a></li>
+            <li><a href="blog-assam-police-constable-exam.html" class="hover:text-brand-red transition-colors">Assam Police Constable Roadmap</a></li>
+            <li><a href="blog.html" class="hover:text-brand-red transition-colors text-white font-bold flex items-center gap-1.5"><span>All Blog Posts & Guides</span><span class="text-[9px] px-1 rounded bg-brand-red text-white">HUB</span></a></li>
             <li><a href="#features" class="hover:text-brand-red transition-colors">Mistake Vault System</a></li>
             <li><a href="#demo" class="hover:text-brand-red transition-colors">Interactive Demo MCQ</a></li>
             <li><a href="#pricing" class="hover:text-brand-red transition-colors">Season Pass (₹249)</a></li>
@@ -1179,10 +1355,10 @@
         <span class="text-[10px] text-brand-muted">40k+ MCQs • -0.25 Negative</span>
       </div>
     </div>
-    <button onclick="openModal('download-modal')" class="px-4 py-2 bg-brand-red text-white font-black text-xs rounded-xl shadow-brand-glow flex items-center gap-1.5 active:scale-95">
+    <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-brand-red text-white font-black text-xs rounded-xl shadow-brand-glow flex items-center gap-1.5 active:scale-95">
       <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.86.58-1.57 1.4-1.87L14.7 12 4.4 22.37c-.82-.3-1.4-1.01-1.4-1.87zm14.3-10.9L19.9 11c.8.5.8 1.4 0 1.9l-2.6 1.4-3.5-3.5 3.5-3.5zM4.7 2.1l11.1 6.3-2.9 2.9-8.2-9.2zm0 19.8l8.2-9.2 2.9 2.9-11.1 6.3z"/></svg>
       <span>Install App</span>
-    </button>
+    </a>
   </div>
 
   <!-- POPUP TOAST SIMULATION (Social Proof Notifications) -->
@@ -1214,7 +1390,7 @@
       </div>
 
       <!-- Option 1: Direct Play Store Button -->
-      <a href="https://play.google.com/store" target="_blank" class="w-full flex items-center justify-center bg-transparent p-0 transition-transform hover:scale-105 active:scale-95">
+      <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" class="w-full flex items-center justify-center bg-transparent p-0 transition-transform hover:scale-105 active:scale-95">
         <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
       </a>
 
