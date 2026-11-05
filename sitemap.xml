@@ -58,6 +58,18 @@
     </image:image>
   </url>
 
+  <!-- Blog Article: Top 100 Repeated Assam GK Questions -->
+  <url>
+    <loc>https://pyqscore.in/blog-top-100-repeated-assam-gk-questions.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
+      <image:title>Top 100 Repeated Assam GK Questions Guide</image:title>
+    </image:image>
+  </url>
+
   <!-- Affiliate / Partner Program -->
   <url>
     <loc>https://pyqscore.in/affiliate.html</loc>
