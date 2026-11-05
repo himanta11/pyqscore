@@ -215,20 +215,18 @@
         </div>
       </a>
 
-      <!-- Center Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-brand-slate">
-        <a href="index.html" class="hover:text-brand-red transition-colors flex items-center gap-1">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-          <span>Home</span>
+            <!-- Center Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-brand-slate">
+        <a href="index.html" class="hover:text-brand-red transition-colors ">Home</a>
+        <a href="index.html#syllabus" class="hover:text-brand-red transition-colors ">Exams</a>
+        <a href="adre-mock-test.html" class="hover:text-brand-red transition-colors ">Mock Tests</a>
+        <a href="blog-top-100-repeated-assam-gk-questions.html" class="hover:text-brand-red transition-colors ">PYQs</a>
+        <a href="blog.html" class="hover:text-brand-red transition-colors text-brand-red font-bold">Blogs</a>
+        <a href="affiliate.html" class="hover:text-brand-red transition-colors flex items-center gap-1.5 font-bold ">
+          <span>Affiliate Program</span>
+          <span class="text-[10px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded border border-emerald-300 font-bold">Earn ₹40+</span>
         </a>
-        <a href="index.html#demo" class="hover:text-brand-red transition-colors">Free MCQ Demo</a>
-        <a href="index.html#syllabus" class="hover:text-brand-red transition-colors">Syllabus</a>
-        <a href="index.html#pricing" class="hover:text-brand-red transition-colors">Passes</a>
-        <a href="blog.html" class="text-brand-red font-bold">Preparation Blog</a>
-        <a href="affiliate.html" class="hover:text-brand-red transition-colors flex items-center gap-1">
-          <span>Earn ₹40/Student</span>
-          <span class="text-[9px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">PARTNER</span>
-        </a>
+        <a href="index.html#faqs" class="hover:text-brand-red transition-colors">FAQ</a>
       </nav>
 
       <!-- Right Action CTA (Play Store) -->
@@ -239,7 +237,7 @@
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="md:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
+      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="lg:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -248,17 +246,18 @@
 
     </div>
 
-    <!-- Mobile Nav Dropdown -->
-    <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
-      <a href="index.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">← Back to Home</a>
-      <a href="index.html#demo" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Free MCQ Demo Drill</a>
-      <a href="index.html#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Syllabus Breakdown</a>
-      <a href="index.html#pricing" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Pricing & Passes</a>
-      <a href="blog.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red font-bold text-sm">Preparation Blog & Guides</a>
-      <a href="affiliate.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Affiliate & Partner Program</a>
+        <!-- Mobile Nav Dropdown -->
+    <div id="mobile-nav" class="hidden lg:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
+      <a href="index.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Home</a>
+      <a href="index.html#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Exams</a>
+      <a href="adre-mock-test.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Mock Tests</a>
+      <a href="blog-top-100-repeated-assam-gk-questions.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">PYQs</a>
+      <a href="blog.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red font-bold hover:text-brand-red text-sm font-semibold">Blogs</a>
+      <a href="affiliate.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red hover:text-brand-red text-sm font-bold flex items-center justify-between"><span>Affiliate Program (Earn ₹40/Student)</span><span class="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">LIVE TRACKER</span></a>
+      <a href="index.html#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">FAQ</a>
       <div class="pt-3 border-t border-beige-border flex flex-col gap-2">
         <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" onclick="toggleMobileNav()" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
-          <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
+          <img src="asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
         </a>
       </div>
     </div>
