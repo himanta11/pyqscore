@@ -14,6 +14,18 @@
     </image:image>
   </url>
 
+  <!-- ADRE Mock Test Dedicated Landing Page -->
+  <url>
+    <loc>https://pyqscore.in/adre-mock-test/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
+      <image:title>ADRE Mock Test Online Grade 3 and Grade 4 Practice</image:title>
+    </image:image>
+  </url>
+
   <!-- Blog Listing Hub -->
   <url>
     <loc>https://pyqscore.in/blog.html</loc>
