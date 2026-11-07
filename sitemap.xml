@@ -5,19 +5,19 @@
   <!-- Homepage -->
   <url>
     <loc>https://pyqscore.in/</loc>
-    <lastmod>2026-02-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pyqscore.in/asset/hero%20img.png</image:loc>
-      <image:title>PYQScore Assam ADRE 3.0 Mock Test Engine</image:title>
+      <image:title>The All-in-One Mock Test and PYQ App for Assam Govt Exams</image:title>
     </image:image>
   </url>
 
-  <!-- ADRE Mock Test Dedicated Landing Page -->
+  <!-- ADRE Mock Test Dedicated Pillar Landing Page -->
   <url>
     <loc>https://pyqscore.in/adre-mock-test/</loc>
-    <lastmod>2026-02-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -28,64 +28,40 @@
 
   <!-- Blog Listing Hub -->
   <url>
-    <loc>https://pyqscore.in/blog.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/blog/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
 
-  <!-- Blog Article 1: How to Prepare for ADRE 3.0 2026 -->
+  <!-- Blog Article: ADRE 3.0 Mock Test Online 2026 -->
   <url>
-    <loc>https://pyqscore.in/blog-how-to-prepare-for-adre-3.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/blogs/adre-3-mock-test-online-2026/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
-      <image:title>How to Prepare for ADRE 3.0 2026 Strategy Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- Blog Article 2: ADRE 3.0 Mock Test Online 2026 -->
-  <url>
-    <loc>https://pyqscore.in/blog-adre-3-mock-test-online-2026.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
       <image:title>ADRE 3.0 Mock Test Online 2026 Grade 3 and Grade 4</image:title>
     </image:image>
   </url>
 
-  <!-- Blog Article 3: Assam Police Constable Exam Guide -->
+  <!-- Blog Article: How to Prepare for ADRE 3.0 -->
   <url>
-    <loc>https://pyqscore.in/blog-assam-police-constable-exam.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/blogs/how-to-prepare-for-adre-3/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
     <image:image>
-      <image:loc>https://pyqscore.in/asset/assam-police-constable-exam-banner.jpg</image:loc>
-      <image:title>Assam Police Constable Exam Preparation Guide SLPRB</image:title>
+      <image:loc>https://pyqscore.in/asset/adre-3-mock-test-2026-banner.jpg</image:loc>
+      <image:title>How to Prepare for ADRE 3.0 Strategy Guide</image:title>
     </image:image>
   </url>
 
-  <!-- Blog Article: Top 100 Repeated Assam GK Questions -->
+  <!-- Blog Article: Why Solving PYQs Is Key to Cracking Assam Competitive Exams -->
   <url>
-    <loc>https://pyqscore.in/blog-top-100-repeated-assam-gk-questions.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://pyqscore.in/asset/top-100-repeated-assam-gk-banner.jpg</image:loc>
-      <image:title>Top 100 Repeated Assam GK Questions Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- Blog Article 4: Why Solving PYQs Is Key to Cracking Assam Competitive Exams -->
-  <url>
-    <loc>https://pyqscore.in/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/blogs/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -94,29 +70,52 @@
     </image:image>
   </url>
 
-  <!-- Affiliate / Partner Program -->
+  <!-- Blog Article: Top 100 Repeated Assam GK Questions -->
   <url>
-    <loc>https://pyqscore.in/affiliate.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://pyqscore.in/blogs/top-100-repeated-assam-gk-questions/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/top-100-repeated-assam-gk-banner.jpg</image:loc>
+      <image:title>Top 100 Repeated Assam GK Questions Guide</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Article: Assam Police Constable Exam Guide -->
+  <url>
+    <loc>https://pyqscore.in/blogs/assam-police-constable-exam/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/assam-police-constable-exam-banner.jpg</image:loc>
+      <image:title>Assam Police Constable Exam Preparation Guide SLPRB</image:title>
+    </image:image>
   </url>
 
   <!-- Assam Government Job Notifications & Alerts -->
   <url>
-    <loc>https://pyqscore.in/job-notifications.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/job-notifications/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- About PYQScore -->
+  <!-- About PYQScore & Scholar Academy -->
   <url>
-    <loc>https://pyqscore.in/about.html</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://pyqscore.in/about/</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Affiliate / Partner Program -->
+  <url>
+    <loc>https://pyqscore.in/affiliate/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
-
