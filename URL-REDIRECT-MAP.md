@@ -135,3 +135,4 @@ Vercel serves directory paths containing an `index.html` natively without traili
 ## 4. Redirect Loop & Chain Prevention Verification
 - **Chain Check:** Each legacy URL redirects in a single hop directly to the final canonical folder (e.g., `/blog-adre-3-mock-test-online-2026.html` $\rightarrow$ `/blogs/adre-3-mock-test-online-2026/`). Zero multi-hop chains.
 - **Loop Check:** All target URLs are directory roots hosting an actual `index.html` file that serves HTTP 200 without issuing a redirect.
+

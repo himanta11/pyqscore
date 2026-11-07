@@ -9,10 +9,9 @@ This document establishes the single primary keyword, search intent, metadata sp
 ### Page 1: Primary ADRE Pillar
 - **Canonical URL:** `https://pyqscore.in/adre-mock-test/`
 - **File Location:** `adre-mock-test/index.html`
-- **Primary Keyword:** `ADRE Mock Test`
-- **Primary Search Intent:** Commercial / Transactional (Aspirants looking to practice full mock tests and online MCQs for ADRE).
+- **Primary Keywords:** `ADRE Mock Test`, `ADRE 3.0 Mock Test`, `ADRE Mock Test Online`, `Assam Direct Recruitment Mock Test`
+- **Primary Search Intent:** Commercial / Transactional (Aspirants looking to practice full mock tests, ADRE 3.0 resources, and online MCQs for ADRE).
 - **Secondary Keywords:**
-  - `ADRE Mock Test Online`
   - `ADRE Mock Test App`
   - `ADRE Grade 3 Mock Test`
   - `ADRE Grade 4 Mock Test`
@@ -21,9 +20,9 @@ This document establishes the single primary keyword, search intent, metadata sp
   - `ADRE Online Practice Test`
   - `ADRE MCQ Practice`
   - `ADRE PYQ App`
-- **SEO Title:** `ADRE Mock Test Online 2026 – Grade 3 & 4 | PYQScore`
-- **Meta Description:** `Practise ADRE Mock Test Online with PYQScore. Prepare for Grade 3 and Grade 4 with Assamese and English MCQs, previous-year questions and online exam practice.`
-- **Primary H1:** `ADRE Mock Test Online for Grade 3 & Grade 4`
+- **SEO Title:** `ADRE Mock Test 2026 – ADRE 3.0 Online Test | PYQScore`
+- **Meta Description:** `Prepare for ADRE and ADRE 3.0 with online mock tests, Grade III and Grade IV practice, Assam GK, previous-year questions and subject-wise MCQs on PYQScore.`
+- **Primary H1:** `ADRE Mock Test Online for Grade 3 & Grade 4 – ADRE 3.0 Preparation`
 - **Internal Linking Focus:** Outbound links to `/blogs/how-to-prepare-for-adre-3/`, `/blogs/top-100-repeated-assam-gk-questions/`, and `/blogs/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams/`. Inbound anchor texts from sitewide navbar dropdown and blog in-text mentions.
 
 ---
@@ -201,3 +200,4 @@ This document establishes the single primary keyword, search intent, metadata sp
 | **Assam Exam PYQ Strategy** | `/blogs/why-solving-pyqs.../` | `/adre-mock-test/` |
 | **Assam GK MCQs** | `/blogs/top-100-repeated-assam-gk.../` | `/adre-mock-test/` |
 | **Assam Police Recruitment** | `/blogs/assam-police-constable-exam/` | `/job-notifications/` |
+

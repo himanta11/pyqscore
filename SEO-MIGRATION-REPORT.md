@@ -127,18 +127,24 @@ This consolidates domain authority into `/adre-mock-test/`, maximizing organic r
 ## 5. Technical SEO & On-Page Implementation
 
 ### 5.1 Pillar Page Optimization (`/adre-mock-test/`)
-- **Title:** `ADRE Mock Test Online 2026 – Grade 3 & 4 | PYQScore` (52 characters – within 60 char limit).
-- **Meta Description:** `Practise ADRE Mock Test Online with PYQScore. Prepare for Grade 3 and Grade 4 with Assamese and English MCQs, previous-year questions and online exam practice.` (163 characters – optimal snippet length).
-- **H1:** Single, explicit `ADRE Mock Test Online for Grade 3 & Grade 4`.
+- **Title:** `ADRE Mock Test 2026 – ADRE 3.0 Online Test | PYQScore`
+- **Meta Description:** `Prepare for ADRE and ADRE 3.0 with online mock tests, Grade III and Grade IV practice, Assam GK, previous-year questions and subject-wise MCQs on PYQScore.`
+- **H1:** Single, explicit `ADRE Mock Test Online for Grade 3 & Grade 4 – ADRE 3.0 Preparation`
+- **Primary Keywords:** `ADRE Mock Test, ADRE 3.0 Mock Test, ADRE Mock Test Online, Assam Direct Recruitment Mock Test`
 - **H2 Hierarchy:**
-  - `Available ADRE Mock Tests & Question Papers`
-  - `ADRE Grade 3 Mock Test Preparation`
-  - `ADRE Grade 4 Mock Test Preparation`
-  - `Bilingual ADRE Mock Tests in Assamese & English`
-  - `ADRE Previous Year Questions (PYQs) with Solutions`
-  - `How to Attempt ADRE Mock Tests on PYQScore App`
-  - `Why PYQScore Is the Preferred Practice Platform`
+  - `ADRE Mock Test Online – Practise for Assam Direct Recruitment`
+  - `ADRE 3.0 Mock Test Online – Start Your Preparation Early`
+  - `ADRE Grade III Mock Test Online`
+  - `ADRE Grade IV Mock Test Online`
+  - `ADRE Previous Year Questions – Practise PYQs Online`
+  - `Subject-Wise ADRE MCQ Practice`
+  - `ADRE Mock Test in Assamese and English`
+  - `How to Practise ADRE Mock Tests on PYQScore`
+  - `How to Prepare for ADRE 3.0 – Complete Preparation Strategy`
+  - `Why Choose PYQScore for ADRE Preparation?`
+  - `About PYQScore`
   - `Frequently Asked Questions About ADRE Mock Tests`
+  - `Start Your ADRE and ADRE 3.0 Preparation with PYQScore`
 - **Internal Links:** Cross-linked to supporting articles (`/blogs/adre-3-mock-test-online-2026/`, `/blogs/how-to-prepare-for-adre-3/`, `/blogs/top-100-repeated-assam-gk-questions/`, and `/blogs/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams/`).
 
 ### 5.2 Structured Data (Schema.org JSON-LD)
@@ -181,3 +187,4 @@ Because directory nesting changes from 0 levels (root) to 1 level (`/about/`) an
    - `https://pyqscore.in/blogs/top-100-repeated-assam-gk-questions/`
    - `https://pyqscore.in/blogs/assam-police-constable-exam/`
 6. Monitor Google Search Console for any 404 crawl errors over the next 14 days.
+
