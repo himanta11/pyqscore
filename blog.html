@@ -113,16 +113,58 @@
       </a>
 
             <!-- Center Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-brand-slate">
-        <a href="index.html" class="hover:text-brand-red transition-colors ">Home</a>
-        <a href="index.html#syllabus" class="hover:text-brand-red transition-colors ">Exams</a>
-        <a href="adre-mock-test.html" class="hover:text-brand-red transition-colors ">Mock Tests</a>
-        <a href="blog-top-100-repeated-assam-gk-questions.html" class="hover:text-brand-red transition-colors ">PYQs</a>
-        <a href="blog.html" class="hover:text-brand-red transition-colors text-brand-red font-bold">Blogs</a>
-        <a href="affiliate.html" class="hover:text-brand-red transition-colors flex items-center gap-1.5 font-bold ">
-          <span>Affiliate Program</span>
-          <span class="text-[10px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded border border-emerald-300 font-bold">Earn ₹40+</span>
+      <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-brand-slate">
+        <a href="index.html" class="hover:text-brand-red transition-colors">Home</a>
+        <a href="index.html#syllabus" class="hover:text-brand-red transition-colors">Exams</a>
+        
+        <!-- Mock Tests Dropdown -->
+        <div class="relative group py-2">
+          <a href="adre-mock-test.html" class="flex items-center gap-1 hover:text-brand-red transition-colors text-brand-slate font-semibold">
+            <span>Mock Tests</span>
+            <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-brand-muted group-hover:text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <!-- Dropdown Menu -->
+          <div class="absolute top-full left-0 pt-1.5 hidden group-hover:block transition-all duration-150 z-50">
+            <div class="w-64 bg-white rounded-2xl shadow-xl border border-beige-border p-2 space-y-1">
+              <!-- ADRE 3.0 Mock Test -->
+              <a href="adre-mock-test.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-brand-redLight transition-colors group/item">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-xs">3.0</span>
+                  <div>
+                    <span class="text-xs font-bold text-brand-dark group-hover/item:text-brand-red block">ADRE 3.0 Mock Test</span>
+                    <span class="text-[10px] text-brand-muted">Grade 3 &amp; 4 Full Series</span>
+                  </div>
+                </div>
+                <span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-red text-white font-bold">LIVE</span>
+              </a>
+
+              <div class="h-px bg-beige-border my-1"></div>
+
+              <!-- Other Exams: Coming Soon -->
+              <div class="p-2.5 rounded-xl bg-beige-100/70 border border-dashed border-beige-300">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-brand-slate">Other Exams</span>
+                  <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold border border-amber-200">Coming Soon</span>
+                </div>
+                <p class="text-[10px] text-brand-muted mt-1 leading-snug">
+                  Assam Police (UB/AB/SI), APSC &amp; Forest Guard mock tests launching soon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="blog-top-100-repeated-assam-gk-questions.html" class="hover:text-brand-red transition-colors">PYQs</a>
+        <a href="job-notifications.html" class="hover:text-brand-red transition-colors flex items-center gap-1">
+          <span>Job Alerts</span>
+          <span class="text-[9px] px-1 rounded bg-brand-red text-white font-bold animate-pulse">NEW</span>
         </a>
+        <a href="blog.html" class="text-brand-red font-bold">Blogs</a>
+        <a href="affiliate.html" class="hover:text-brand-red transition-colors flex items-center gap-1">
+          <span>Affiliate</span>
+          <span class="text-[9px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded border border-emerald-300 font-bold">Earn ₹40+</span>
+        </a>
+        <a href="about.html" class="hover:text-brand-red transition-colors">About Us</a>
         <a href="index.html#faqs" class="hover:text-brand-red transition-colors">FAQ</a>
       </nav>
 
@@ -134,7 +176,7 @@
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="lg:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
+      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="xl:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -144,17 +186,41 @@
     </div>
 
         <!-- Mobile Nav Dropdown -->
-    <div id="mobile-nav" class="hidden lg:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
-      <a href="index.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Home</a>
-      <a href="index.html#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Exams</a>
-      <a href="adre-mock-test.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">Mock Tests</a>
-      <a href="blog-top-100-repeated-assam-gk-questions.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">PYQs</a>
-      <a href="blog.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red font-bold hover:text-brand-red text-sm font-semibold">Blogs</a>
-      <a href="affiliate.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red hover:text-brand-red text-sm font-bold flex items-center justify-between"><span>Affiliate Program (Earn ₹40/Student)</span><span class="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">LIVE TRACKER</span></a>
-      <a href="index.html#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red text-sm font-semibold">FAQ</a>
+    <div id="mobile-nav" class="hidden xl:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
+      <a href="index.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">Home</a>
+      <a href="index.html#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">Exams</a>
+      
+      <!-- Mobile Mock Tests Section -->
+      <div class="py-1">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-brand-muted mb-1.5 flex items-center justify-between">
+          <span>Mock Tests</span>
+          <span class="text-[9px] px-1 rounded bg-brand-red text-white font-bold">1 LIVE</span>
+        </div>
+        <div class="pl-2.5 space-y-1.5 border-l-2 border-brand-red/40">
+          <a href="adre-mock-test.html" onclick="toggleMobileNav()" class="flex items-center justify-between py-2 px-2.5 rounded-xl bg-brand-redLight/60 text-brand-red font-bold text-sm">
+            <span class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-red text-white flex items-center justify-center text-[10px] font-bold">3.0</span>
+              <span>ADRE 3.0 Mock Test</span>
+            </span>
+            <span class="text-[9px] px-1.5 py-0.5 bg-brand-red text-white rounded font-bold">LIVE</span>
+          </a>
+          <div class="flex items-center justify-between py-1.5 px-2.5 text-xs text-brand-muted font-medium bg-stone-50 rounded-lg border border-dashed border-beige-border">
+            <span>Other Assam Govt Exams</span>
+            <span class="text-[9px] px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 font-bold border border-amber-200">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="blog-top-100-repeated-assam-gk-questions.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">PYQs</a>
+      <a href="job-notifications.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm flex items-center justify-between"><span>Assam Job Notifications</span><span class="text-[10px] px-2 py-0.5 bg-brand-red text-white rounded font-bold">UPDATED</span></a>
+      <a href="blog.html" onclick="toggleMobileNav()" class="block py-2 text-brand-red font-bold text-sm">Blogs &amp; Strategy</a>
+      <a href="affiliate.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm flex items-center justify-between"><span>Affiliate Program (Earn ₹40/Student)</span><span class="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">LIVE</span></a>
+      <a href="about.html" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">About Us</a>
+      <a href="index.html#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">FAQ</a>
+      
       <div class="pt-3 border-t border-beige-border flex flex-col gap-2">
         <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" onclick="toggleMobileNav()" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
-          <img src="asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
+          <img src="./asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
         </a>
       </div>
     </div>
@@ -179,7 +245,8 @@
 
         <!-- Category Filters -->
         <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
-          <span class="px-3.5 py-1.5 rounded-full bg-brand-dark text-white text-xs font-bold">All Guides (4)</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-brand-dark text-white text-xs font-bold">All Guides (5)</span>
+          <a href="#pyq-guide" class="px-3.5 py-1.5 rounded-full bg-white hover:bg-beige-200 border border-beige-border text-brand-slate text-xs font-semibold transition-colors">PYQ Strategy</a>
           <a href="#adre-3" class="px-3.5 py-1.5 rounded-full bg-white hover:bg-beige-200 border border-beige-border text-brand-slate text-xs font-semibold transition-colors">ADRE 3.0</a>
           <a href="#assam-gk" class="px-3.5 py-1.5 rounded-full bg-white hover:bg-beige-200 border border-beige-border text-brand-slate text-xs font-semibold transition-colors">Top 100 Assam GK</a>
           <a href="#assam-police" class="px-3.5 py-1.5 rounded-full bg-white hover:bg-beige-200 border border-beige-border text-brand-slate text-xs font-semibold transition-colors">Assam Police</a>
@@ -188,6 +255,63 @@
 
       <!-- BLOG CARDS GRID -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch pt-4">
+
+        <!-- ARTICLE CARD NEW: WHY SOLVING PYQS IS KEY -->
+        <article id="pyq-guide" class="card-beige rounded-3xl overflow-hidden flex flex-col hover:shadow-warm-lg transition-all duration-300 group border border-beige-border md:col-span-2 lg:grid lg:grid-cols-12 bg-white">
+          <!-- Banner Image Thumbnail (5 cols on lg) -->
+          <a href="why-solving-pyqs-is-key-to-cracking-assam-competitive-exams.html" class="block relative aspect-[16/9] lg:aspect-auto lg:h-full lg:col-span-5 overflow-hidden bg-brand-slate">
+            <img src="./asset/why-solving-pyqs-banner.jpg" alt="Why Solving PYQs Is Key to Cracking Assam Competitive Exams" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-brand-red text-white text-xs font-extrabold shadow-sm">
+                FEATURED STRATEGY
+              </span>
+              <span class="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur text-brand-dark text-[11px] font-bold shadow-sm">
+                ADRE • Police • APSC
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/75 backdrop-blur text-white text-[11px] font-medium flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>8 min read</span>
+            </div>
+          </a>
+
+          <!-- Content Body (7 cols on lg) -->
+          <div class="p-6 sm:p-8 lg:col-span-7 flex flex-col justify-between space-y-5">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-xs text-brand-muted">
+                <span>By PYQScore &amp; Scholar Academy</span>
+                <span>•</span>
+                <span>Exam Strategy Guide</span>
+              </div>
+              <h2 class="text-xl sm:text-2xl lg:text-3xl font-black text-brand-dark group-hover:text-brand-red transition-colors leading-snug">
+                <a href="why-solving-pyqs-is-key-to-cracking-assam-competitive-exams.html">
+                  Why Solving Previous Year Questions (PYQs) Is the Key to Cracking Assam Competitive Exams
+                </a>
+              </h2>
+              <p class="text-sm sm:text-base text-brand-slate line-clamp-3 leading-relaxed">
+                Clearing ADRE Grade III &amp; IV, Assam Police, and APSC requires sharp execution. Discover how systematic PYQ practice, -0.25 negative marking drills, and Scholar Academy classroom guidance help you secure top state ranks.
+              </p>
+            </div>
+
+            <!-- Key Feature Tags -->
+            <div class="pt-4 border-t border-beige-border space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-lg bg-beige-200 text-brand-dark text-xs font-semibold">Active Recall</span>
+                <span class="px-2.5 py-1 rounded-lg bg-beige-200 text-brand-dark text-xs font-semibold">SLRC &amp; SLPRB Pattern</span>
+                <span class="px-2.5 py-1 rounded-lg bg-beige-200 text-brand-dark text-xs font-semibold">Scholar Academy Partner</span>
+              </div>
+
+              <!-- Action Link -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="why-solving-pyqs-is-key-to-cracking-assam-competitive-exams.html" class="inline-flex items-center gap-2 text-sm font-extrabold text-brand-red group-hover:gap-3 transition-all">
+                  <span>Read Complete Guide</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <span class="text-xs text-brand-muted font-medium">Free Strategy &amp; FAQs</span>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <!-- ARTICLE CARD 1: ADRE 3.0 MOCK TEST -->
         <article id="adre-3" class="card-beige rounded-3xl overflow-hidden flex flex-col hover:shadow-warm-lg transition-all duration-300 group border border-beige-border">
@@ -485,6 +609,9 @@
           <h4 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h4>
           <ul class="space-y-2 text-stone-400">
             <li><a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="hover:text-brand-red transition-colors text-white font-bold flex items-center gap-1.5"><span>Google Play Store</span><span class="text-[9px] px-1 rounded bg-stone-800 text-brand-red font-bold">App</span></a></li>
+            <li><a href="job-notifications.html" class="hover:text-brand-red transition-colors text-white font-bold flex items-center gap-1.5"><span>Assam Job Alerts</span><span class="text-[9px] px-1 rounded bg-brand-red text-white">NEW</span></a></li>
+            <li><a href="about.html" class="hover:text-brand-red transition-colors">About Us & Methodology</a></li>
+            <li><a href="adre-mock-test.html" class="hover:text-brand-red transition-colors">ADRE Mock Test Online</a></li>
             <li><a href="index.html#features" class="hover:text-brand-red transition-colors">Mistake Vault System</a></li>
             <li><a href="index.html#demo" class="hover:text-brand-red transition-colors">Interactive Demo MCQ</a></li>
             <li><a href="index.html#pricing" class="hover:text-brand-red transition-colors">Season Pass (₹249)</a></li>

@@ -82,9 +82,37 @@
     </image:image>
   </url>
 
+  <!-- Blog Article 4: Why Solving PYQs Is Key to Cracking Assam Competitive Exams -->
+  <url>
+    <loc>https://pyqscore.in/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/why-solving-pyqs-banner.jpg</image:loc>
+      <image:title>Why Solving PYQs Is Key to Cracking Assam Competitive Exams</image:title>
+    </image:image>
+  </url>
+
   <!-- Affiliate / Partner Program -->
   <url>
     <loc>https://pyqscore.in/affiliate.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Assam Government Job Notifications & Alerts -->
+  <url>
+    <loc>https://pyqscore.in/job-notifications.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- About PYQScore -->
+  <url>
+    <loc>https://pyqscore.in/about.html</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
