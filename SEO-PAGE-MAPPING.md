@@ -191,6 +191,25 @@ This document establishes the single primary keyword, search intent, metadata sp
 
 ---
 
+### Page 12: Best ADRE Mock Test & Solved Previous Year Question Paper Online
+- **Canonical URL:** `https://pyqscore.in/adre-mock-test-previous-year-paper/`
+- **File Location:** `adre-mock-test-previous-year-paper/index.html`
+- **Primary Keyword:** `ADRE mock test, ADRE previous year question paper`
+- **Primary Search Intent:** Commercial & Evaluative (Candidates searching for authentic solved past papers, official keys, and online mock test practice for ADRE Grade 3 & 4).
+- **Secondary Keywords:**
+  - `Assam direct recruitment question paper with answers`
+  - `pyqscore.in ADRE preparation`
+  - `PYQScore app download`
+  - `Assam govt exam mock test`
+  - `ADRE Grade 3 test series`
+  - `ADRE Grade 4 practice paper`
+- **SEO Title:** `ADRE Mock Test & Solved Previous Year Question Paper Online | PYQscore`
+- **Meta Description:** `Practice authentic ADRE Grade 3 & Grade 4 mock tests and solved previous year papers in Assamese & English on pyqscore.in or download the PYQScore Android app. Boost your Assam Govt Exam score today.`
+- **Primary H1:** `Best ADRE Mock Test & Solved Previous Year Question Paper Online | PYQscore`
+- **Target Inbound / Outbound Link:** Direct bidirectional links with `/adre-mock-test/` and featured card on `/blog/`.
+
+---
+
 ## 3. Cannibalization Prevention Matrix
 
 | Keyword Cluster | Assigned Primary Page | Supporting Pages (Must NOT Compete For Primary Tag) |

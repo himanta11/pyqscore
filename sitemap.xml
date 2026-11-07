@@ -118,4 +118,16 @@
     <priority>0.70</priority>
   </url>
 
+  <!-- Blog Article: ADRE Mock Test & Solved Previous Year Question Paper Online -->
+  <url>
+    <loc>https://pyqscore.in/adre-mock-test-previous-year-paper/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-mock-test-online-hero-banner.jpg</image:loc>
+      <image:title>ADRE Mock Test and Solved Previous Year Question Paper Online</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -4,6 +4,21 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/blogs/adre-mock-test-previous-year-paper/",
+      "destination": "/adre-mock-test-previous-year-paper/",
+      "permanent": true
+    },
+    {
+      "source": "/adre-mock-test-previous-year-paper.html",
+      "destination": "/adre-mock-test-previous-year-paper/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-adre-mock-test-previous-year-paper.html",
+      "destination": "/adre-mock-test-previous-year-paper/",
+      "permanent": true
+    },
+    {
       "source": "/adre-mock-test.html",
       "destination": "/adre-mock-test/",
       "permanent": true
@@ -92,4 +107,3 @@
     }
   ]
 }
-
