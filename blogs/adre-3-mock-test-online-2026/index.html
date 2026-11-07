@@ -185,131 +185,149 @@
   <div id="reading-progress"></div>
 
   <!-- 1. STICKY HEADER -->
-  <header class="sticky top-0 z-50 nav-beige transition-all duration-300" id="main-header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <!-- GLOBAL REDESIGNED WEBSITE HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 transition-all duration-200" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[76px] flex items-center justify-between">
       
-      <!-- Logo -->
-      <a href="/" class="flex items-center gap-2.5 group">
-        <img src="../../asset/ADRE 3.0 (1).png" alt="PYQScore Logo" class="w-10 h-10 object-contain group-hover:scale-105 transition-transform">
+      <!-- Left: Logo & Tagline -->
+      <a href="/" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-xl p-1" aria-label="PYQScore Home">
+        <img src="../../asset/favicon.png" alt="PYQScore Logo" class="w-10 h-10 object-contain rounded-xl shadow-warm-sm group-hover:scale-105 transition-transform duration-200">
         <div class="flex flex-col">
-          <span class="text-xl font-extrabold tracking-tight text-brand-dark flex items-center">
-            PYQScore<span class="text-brand-red">.</span>
+          <span class="text-xl font-extrabold tracking-tight text-stone-900 group-hover:text-brand-red transition-colors leading-tight">
+            PYQ<span class="text-brand-red">Score</span>
           </span>
-          <span class="text-[10px] font-bold tracking-wider uppercase text-brand-muted -mt-1">
-            Assam ADRE 3.0 Engine
+          <span class="text-[10px] font-medium tracking-wider text-stone-500 hidden sm:block">
+            Practise More. Prepare Better.
           </span>
         </div>
       </a>
 
-            <!-- Center Desktop Navigation Links -->
-      <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-brand-slate">
-        <a href="/" class="hover:text-brand-red transition-colors">Home</a>
-        <a href="/#syllabus" class="hover:text-brand-red transition-colors">Exams</a>
+      <!-- Center: Desktop Navigation -->
+      <nav class="hidden xl:flex items-center gap-6 text-sm" aria-label="Primary Navigation">
+        <a href="/" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1">Home</a>
         
-        <!-- Mock Tests Dropdown -->
+        <a href="/adre-mock-test/" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 flex items-center gap-1.5">
+          <span>ADRE Mock Test</span>
+          <span class="text-[9px] px-1.5 py-0.2 bg-brand-redLight text-brand-red font-bold rounded border border-brand-redMuted">3.0</span>
+        </a>
+
+        <!-- Exams Dropdown -->
         <div class="relative group py-2">
-          <a href="/adre-mock-test/" class="flex items-center gap-1 hover:text-brand-red transition-colors text-brand-slate font-semibold">
-            <span>Mock Tests</span>
-            <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-brand-muted group-hover:text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </a>
+          <button type="button" class="flex items-center gap-1.5 text-stone-700 hover:text-brand-red font-semibold py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 transition-colors" aria-expanded="false" aria-haspopup="true">
+            <span>Exams</span>
+            <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180 text-stone-400 group-hover:text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <!-- Dropdown Menu -->
-          <div class="absolute top-full left-0 pt-1.5 hidden group-hover:block transition-all duration-150 z-50">
-            <div class="w-64 bg-white rounded-2xl shadow-xl border border-beige-border p-2 space-y-1">
-              <!-- ADRE 3.0 Mock Test -->
-              <a href="/adre-mock-test/" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-brand-redLight transition-colors group/item">
+          <div class="absolute top-full left-0 pt-2 hidden group-hover:block group-focus-within:block transition-all duration-150 z-50 w-72">
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200/90 p-2 space-y-1">
+              <!-- ADRE -->
+              <a href="/adre-mock-test/" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-brand-redLight/70 transition-colors group/item">
                 <div class="flex items-center gap-2.5">
                   <span class="w-7 h-7 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-xs">3.0</span>
                   <div>
-                    <span class="text-xs font-bold text-brand-dark group-hover/item:text-brand-red block">ADRE 3.0 Mock Test</span>
-                    <span class="text-[10px] text-brand-muted">Grade 3 &amp; 4 Full Series</span>
+                    <span class="text-xs font-bold text-stone-900 group-hover/item:text-brand-red block">ADRE (Grade 3 &amp; 4)</span>
+                    <span class="text-[10px] text-stone-500">Full Mock Tests &amp; PYQs</span>
                   </div>
                 </div>
                 <span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-red text-white font-bold">LIVE</span>
               </a>
 
-              <div class="h-px bg-beige-border my-1"></div>
+              <!-- Assam Police -->
+              <a href="/blogs/assam-police-constable-exam/" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-stone-50 transition-colors group/item">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-stone-800 text-white flex items-center justify-center font-bold text-xs">AP</span>
+                  <div>
+                    <span class="text-xs font-bold text-stone-900 group-hover/item:text-brand-red block">Assam Police (SI &amp; Constable)</span>
+                    <span class="text-[10px] text-stone-500">Syllabus &amp; Exam Prep</span>
+                  </div>
+                </div>
+                <span class="text-[9px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-700 font-bold border border-stone-200">Guide</span>
+              </a>
 
-              <!-- Other Exams: Coming Soon -->
-              <div class="p-2.5 rounded-xl bg-beige-100/70 border border-dashed border-beige-300">
+              <div class="h-px bg-stone-100 my-1"></div>
+
+              <!-- SSC & Banking (Coming Soon) -->
+              <div class="p-2.5 rounded-xl bg-stone-50 border border-dashed border-stone-200 space-y-1">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold text-brand-slate">Other Exams</span>
+                  <span class="text-xs font-bold text-stone-700">SSC, Banking &amp; Other Exams</span>
                   <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold border border-amber-200">Coming Soon</span>
                 </div>
-                <p class="text-[10px] text-brand-muted mt-1 leading-snug">
-                  Assam Police (UB/AB/SI), APSC &amp; Forest Guard mock tests launching soon.
+                <p class="text-[10px] text-stone-500 leading-snug">
+                  SSC CGL/CHSL, IBPS Banking &amp; APSC test series launching soon.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="/blogs/top-100-repeated-assam-gk-questions/" class="hover:text-brand-red transition-colors">PYQs</a>
-        <a href="/job-notifications/" class="hover:text-brand-red transition-colors flex items-center gap-1">
-          <span>Job Alerts</span>
-          <span class="text-[9px] px-1 rounded bg-brand-red text-white font-bold animate-pulse">NEW</span>
+        <a href="/blogs/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams/" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1">Previous Year Questions</a>
+        <a href="/blog/" class="text-brand-red font-bold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1">Blog</a>
+        <a href="/job-notifications/" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 flex items-center gap-1.5">
+          <span>Job Notifications</span>
+          <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-brand-red text-white font-bold animate-pulse">NEW</span>
         </a>
-        <a href="/blog/" class="text-brand-red font-bold">Blogs</a>
-        <a href="/affiliate/" class="hover:text-brand-red transition-colors flex items-center gap-1">
-          <span>Affiliate</span>
-          <span class="text-[9px] px-1.5 py-0.2 bg-emerald-50 text-emerald-700 rounded border border-emerald-300 font-bold">Earn ₹40+</span>
-        </a>
-        <a href="/about/" class="hover:text-brand-red transition-colors">About Us</a>
-        <a href="/#faqs" class="hover:text-brand-red transition-colors">FAQ</a>
+        <a href="/about/" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1">About Us</a>
       </nav>
 
-      <!-- Right Action CTA (Play Store) -->
-      <div class="hidden sm:flex items-center">
-        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none transition-transform hover:scale-105 active:scale-95" title="Get PYQScore App on Google Play">
-          <img src="../../asset/google-play-badge-logo-svgrepo-com.svg" alt="Download on Google Play" class="h-10 w-auto">
+      <!-- Right: Prominent Red "Get the App" CTA -->
+      <div class="hidden xl:flex items-center">
+        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-sm shadow-brand-glow transition-all hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-red" aria-label="Get the PYQScore Android App on Google Play">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.793 12 3.61 22.186a2.385 2.385 0 0 1-.22-.317C3.13 21.43 3 20.76 3 20V4c0-.76.13-1.43.39-1.869.068-.112.142-.22.219-.317zm1.414-.628l10.12 5.843L12.38 9.79 5.023 1.186zm10.12 15.829l-10.12 5.843 7.357-8.604 2.763 2.761zm1.06-1.061l3.52-2.032c1.23-.71 1.23-1.868 0-2.578L16.203 11.9l-2.03 2.03 2.03 2.024z"/></svg>
+          <span>Get the App</span>
         </a>
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="xl:hidden p-2 text-brand-dark hover:text-brand-red focus:outline-none" aria-label="Toggle Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      <button onclick="toggleMobileNav()" id="mobile-menu-btn" class="xl:hidden p-2 text-stone-800 hover:text-brand-red focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg" aria-label="Toggle Menu" aria-expanded="false">
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
 
     </div>
 
-        <!-- Mobile Nav Dropdown -->
-    <div id="mobile-nav" class="hidden xl:hidden px-4 pt-2 pb-6 bg-white border-b border-beige-border shadow-warm-lg space-y-3">
-      <a href="/" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">Home</a>
-      <a href="/#syllabus" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">Exams</a>
-      
-      <!-- Mobile Mock Tests Section -->
-      <div class="py-1">
-        <div class="text-[11px] font-bold uppercase tracking-wider text-brand-muted mb-1.5 flex items-center justify-between">
-          <span>Mock Tests</span>
-          <span class="text-[9px] px-1 rounded bg-brand-red text-white font-bold">1 LIVE</span>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden xl:hidden bg-white border-b border-stone-200 shadow-xl px-4 py-5 space-y-3.5">
+      <!-- Prominent ADRE Mock Test Banner in Mobile -->
+      <a href="/adre-mock-test/" onclick="toggleMobileNav()" class="flex items-center justify-between p-3 rounded-xl bg-brand-redLight border border-brand-redMuted text-brand-red font-bold text-sm">
+        <div class="flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red text-white flex items-center justify-center text-xs font-extrabold">3.0</span>
+          <span>ADRE Mock Test (Grade 3 &amp; 4)</span>
         </div>
-        <div class="pl-2.5 space-y-1.5 border-l-2 border-brand-red/40">
-          <a href="/adre-mock-test/" onclick="toggleMobileNav()" class="flex items-center justify-between py-2 px-2.5 rounded-xl bg-brand-redLight/60 text-brand-red font-bold text-sm">
-            <span class="flex items-center gap-2">
-              <span class="w-5 h-5 rounded-md bg-brand-red text-white flex items-center justify-center text-[10px] font-bold">3.0</span>
-              <span>ADRE 3.0 Mock Test</span>
-            </span>
-            <span class="text-[9px] px-1.5 py-0.5 bg-brand-red text-white rounded font-bold">LIVE</span>
-          </a>
-          <div class="flex items-center justify-between py-1.5 px-2.5 text-xs text-brand-muted font-medium bg-stone-50 rounded-lg border border-dashed border-beige-border">
-            <span>Other Assam Govt Exams</span>
-            <span class="text-[9px] px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 font-bold border border-amber-200">Coming Soon</span>
+        <span class="text-[9px] px-2 py-0.5 rounded-full bg-brand-red text-white font-extrabold">LIVE</span>
+      </a>
+
+      <div class="space-y-1 pt-1 text-sm font-semibold text-stone-700">
+        <a href="/" onclick="toggleMobileNav()" class="block py-2 px-2 hover:bg-stone-50 rounded-lg hover:text-brand-red transition-colors ">Home</a>
+        
+        <!-- Mobile Exams Sub-list -->
+        <div class="py-1 px-2 space-y-1">
+          <span class="text-xs font-bold uppercase tracking-wider text-stone-400 block mb-1">Exams</span>
+          <a href="/adre-mock-test/" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">ADRE (Grade 3 &amp; 4)</a>
+          <a href="/blogs/assam-police-constable-exam/" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">Assam Police (SI &amp; Constable)</a>
+          <div class="pl-3 py-1 flex items-center justify-between text-xs text-stone-400 font-medium">
+            <span>SSC, Banking &amp; Other Exams</span>
+            <span class="text-[9px] px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">Coming Soon</span>
           </div>
         </div>
+
+        <a href="/blogs/why-solving-pyqs-is-key-to-cracking-assam-competitive-exams/" onclick="toggleMobileNav()" class="block py-2 px-2 hover:bg-stone-50 rounded-lg hover:text-brand-red transition-colors ">Previous Year Questions</a>
+        <a href="/blog/" onclick="toggleMobileNav()" class="block py-2 px-2 hover:bg-stone-50 rounded-lg hover:text-brand-red transition-colors text-brand-red font-bold">Blog</a>
+        <a href="/job-notifications/" onclick="toggleMobileNav()" class="flex items-center justify-between py-2 px-2 hover:bg-stone-50 rounded-lg hover:text-brand-red transition-colors ">
+          <span>Job Notifications</span>
+          <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-brand-red text-white font-bold animate-pulse">NEW</span>
+        </a>
+        <a href="/about/" onclick="toggleMobileNav()" class="block py-2 px-2 hover:bg-stone-50 rounded-lg hover:text-brand-red transition-colors ">About Us</a>
       </div>
 
-      <a href="/blogs/top-100-repeated-assam-gk-questions/" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">PYQs</a>
-      <a href="/job-notifications/" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm flex items-center justify-between"><span>Assam Job Notifications</span><span class="text-[10px] px-2 py-0.5 bg-brand-red text-white rounded font-bold">UPDATED</span></a>
-      <a href="/blog/" onclick="toggleMobileNav()" class="block py-2 text-brand-red font-bold text-sm">Blogs &amp; Strategy</a>
-      <a href="/affiliate/" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm flex items-center justify-between"><span>Affiliate Program (Earn ₹40/Student)</span><span class="text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded font-mono font-bold">LIVE</span></a>
-      <a href="/about/" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">About Us</a>
-      <a href="/#faqs" onclick="toggleMobileNav()" class="block py-2 text-brand-dark hover:text-brand-red font-semibold text-sm">FAQ</a>
-      
-      <div class="pt-3 border-t border-beige-border flex flex-col gap-2">
-        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" onclick="toggleMobileNav()" class="w-full flex items-center justify-center bg-transparent p-0 border-0 focus:outline-none">
-          <img src="../../asset/google-play-badge-logo-svgrepo-com.svg" alt="Get it on Google Play" class="h-12 w-auto">
+      <!-- Prominent Red Get the App button for Mobile -->
+      <div class="pt-3 border-t border-stone-100">
+        <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" onclick="toggleMobileNav()" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-sm shadow-brand-glow transition-all">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.793 12 3.61 22.186a2.385 2.385 0 0 1-.22-.317C3.13 21.43 3 20.76 3 20V4c0-.76.13-1.43.39-1.869.068-.112.142-.22.219-.317zm1.414-.628l10.12 5.843L12.38 9.79 5.023 1.186zm10.12 15.829l-10.12 5.843 7.357-8.604 2.763 2.761zm1.06-1.061l3.52-2.032c1.23-.71 1.23-1.868 0-2.578L16.203 11.9l-2.03 2.03 2.03 2.024z"/></svg>
+          <span>Get the App</span>
         </a>
       </div>
     </div>
@@ -1282,11 +1300,21 @@
       const nav = document.getElementById('mobile-nav');
       const hamburger = document.getElementById('hamburger-icon');
       const close = document.getElementById('close-icon');
-      if (nav.classList.contains('hidden')) {
+      const btn = document.getElementById('mobile-menu-btn');
+      if (!nav) return;
+      const isHidden = nav.classList.contains('hidden');
+      if (isHidden) {
         nav.classList.remove('hidden');
-        hamburger.classList.add('hidden');
-        close.classList.remove('hidden');
+        if (hamburger) hamburger.classList.add('hidden');
+        if (close) close.classList.remove('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
       } else {
+        nav.classList.add('hidden');
+        if (hamburger) hamburger.classList.remove('hidden');
+        if (close) close.classList.add('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    } else {
         nav.classList.add('hidden');
         hamburger.classList.remove('hidden');
         close.classList.add('hidden');
