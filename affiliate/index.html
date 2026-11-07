@@ -1561,30 +1561,5 @@
       }
     });
   </script>
-  <!-- Local Navigation Handler for file:// and Subpath Dev Servers -->
-  <script>
-    document.addEventListener('click', function(e) {
-      var a = e.target.closest('a');
-      if (!a) return;
-      var href = a.getAttribute('href');
-      if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('//') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
-
-      if (window.location.protocol === 'file:' && href.startsWith('/')) {
-        e.preventDefault();
-        var parts = window.location.pathname.split('/');
-        parts.pop();
-        var idx = parts.lastIndexOf('waitlist');
-        var root = idx !== -1 ? parts.slice(0, idx + 1).join('/') + '/' : parts.join('/') + '/';
-        var clean = href.replace(/^\//, '');
-        if (clean === '' || clean === '/') clean = 'index.html';
-        else if (clean.endsWith('/')) clean += 'index.html';
-        else if (!clean.endsWith('.html') && !clean.includes('#')) clean += '/index.html';
-        window.location.href = root + clean;
-      } else if (window.location.port && window.location.pathname.startsWith('/waitlist/') && href.startsWith('/') && !href.startsWith('/waitlist/')) {
-        e.preventDefault();
-        window.location.href = '/waitlist' + href;
-      }
-    });
-  </script>
 </body>
 </html>
