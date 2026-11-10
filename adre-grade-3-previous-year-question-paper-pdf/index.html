@@ -617,7 +617,7 @@
                   </td>
                   <td class="py-4 px-3 sm:px-4 text-center">
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
-                      <a href="../adre-mock-test/index.html" onclick="handlePdfDownload(event, 'ADRE 2024 Grade 3 HSSLC Question Paper')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-100 hover:bg-brand-red hover:text-white font-bold text-stone-800 text-xs transition-colors border border-stone-300 shadow-sm">
+                      <a href="https://drive.google.com/file/d/14gH_98wuszFzr_4UHvDHtYD4CeQMSdMM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" onclick="handlePdfDownload(event, 'ADRE 2024 Grade 3 HSSLC Question Paper', this.href)" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-100 hover:bg-brand-red hover:text-white font-bold text-stone-800 text-xs transition-colors border border-stone-300 shadow-sm">
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
                         <span>Download (PDF)</span>
                       </a>
@@ -708,7 +708,7 @@
                 </div>
               </div>
               <div class="grid grid-cols-2 gap-2 pt-1">
-                <a href="../adre-mock-test/index.html" onclick="handlePdfDownload(event, 'ADRE 2024 Grade 3 HSSLC Question Paper')" class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-900 text-xs font-bold border border-stone-300 shadow-sm text-center">
+                <a href="https://drive.google.com/file/d/14gH_98wuszFzr_4UHvDHtYD4CeQMSdMM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" onclick="handlePdfDownload(event, 'ADRE 2024 Grade 3 HSSLC Question Paper', this.href)" class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-900 text-xs font-bold border border-stone-300 shadow-sm text-center">
                   <svg class="w-3.5 h-3.5 text-stone-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
                   <span>Paper (PDF)</span>
                 </a>
@@ -1377,15 +1377,17 @@
     }
 
     // 3. Handle PDF Download Click Notification
-    function handlePdfDownload(e, itemName) {
-      e.preventDefault();
+    function handlePdfDownload(e, itemName, url) {
+      if (!url || url.includes('/adre-mock-test/index.html')) {
+        e.preventDefault();
+      }
       const toast = document.getElementById('download-toast');
       const toastTitle = document.getElementById('toast-title');
       const toastMsg = document.getElementById('toast-msg');
       if (!toast) return;
 
       toastTitle.textContent = itemName;
-      toastMsg.innerHTML = 'Downloading official question set... Practice live with -0.25 negative marking on <a href="../adre-mock-test/index.html" class="underline text-brand-redLight font-bold">PYQScore Portal</a> or <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" class="underline text-brand-redLight font-bold">Mobile App</a>!';
+      toastMsg.innerHTML = 'Opening official question paper... Practice live with -0.25 negative marking on <a href="../adre-mock-test/index.html" class="underline text-brand-redLight font-bold">PYQScore Portal</a> or <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" class="underline text-brand-redLight font-bold">Mobile App</a>!';
 
       toast.classList.remove('translate-y-32', 'opacity-0');
       toast.classList.add('translate-y-0', 'opacity-100');
