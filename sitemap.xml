@@ -130,4 +130,16 @@
     </image:image>
   </url>
 
+  <!-- Blog Article: ADRE Grade 3 Previous Year Question Paper with Answer Key (PDF & Online Mock) -->
+  <url>
+    <loc>https://pyqscore.in/adre-grade-3-previous-year-question-paper-pdf/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://pyqscore.in/asset/adre-mock-test-solved-previous-year-paper-banner.jpg</image:loc>
+      <image:title>ADRE Grade 3 Previous Year Question Paper with Answer Key PDF and Online Mock</image:title>
+    </image:image>
+  </url>
+
 </urlset>

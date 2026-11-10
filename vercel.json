@@ -4,6 +4,21 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/blogs/adre-grade-3-previous-year-question-paper-pdf/",
+      "destination": "/adre-grade-3-previous-year-question-paper-pdf/",
+      "permanent": true
+    },
+    {
+      "source": "/adre-grade-3-previous-year-question-paper-pdf.html",
+      "destination": "/adre-grade-3-previous-year-question-paper-pdf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-adre-grade-3-previous-year-question-paper-pdf.html",
+      "destination": "/adre-grade-3-previous-year-question-paper-pdf/",
+      "permanent": true
+    },
+    {
       "source": "/blogs/adre-mock-test-previous-year-paper/",
       "destination": "/adre-mock-test-previous-year-paper/",
       "permanent": true
