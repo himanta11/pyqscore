@@ -87,6 +87,16 @@
       "source": "/affiliate.html",
       "destination": "/affiliate/",
       "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions/",
+      "destination": "/terms/",
+      "permanent": true
     }
   ],
   "headers": [
