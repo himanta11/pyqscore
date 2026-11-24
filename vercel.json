@@ -4,6 +4,28 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "pyqscore-sa6o.vercel.app"
+        }
+      ],
+      "destination": "https://pyqscore.in/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "destination": "https://pyqscore.in/:path*",
+      "permanent": true
+    },
+    {
       "source": "/blogs/adre-grade-3-previous-year-question-paper-pdf/",
       "destination": "/adre-grade-3-previous-year-question-paper-pdf/",
       "permanent": true

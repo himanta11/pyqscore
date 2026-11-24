@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://pyqscore.in/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,7 +17,7 @@
   <!-- ADRE Mock Test Dedicated Pillar Landing Page -->
   <url>
     <loc>https://pyqscore.in/adre-mock-test/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -29,7 +29,7 @@
   <!-- Blog Listing Hub -->
   <url>
     <loc>https://pyqscore.in/blog/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -37,7 +37,7 @@
   <!-- Blog Article: ADRE 3.0 Mock Test Online 2026 -->
   <url>
     <loc>https://pyqscore.in/blogs/adre-3-mock-test-online-2026/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
