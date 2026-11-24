@@ -106,8 +106,18 @@
       "permanent": true
     },
     {
+      "source": "/affiliate",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/affiliate.html",
-      "destination": "/affiliate/",
+      "destination": "/",
       "permanent": true
     },
     {

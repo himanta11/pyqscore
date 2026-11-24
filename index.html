@@ -965,46 +965,6 @@
       </div>
     </section>
 
-    <!-- 7. EDUCATOR & MENTOR PARTNER CALLOUT (B2B2C) -->
-    <section id="affiliate" class="py-20 bg-beige-canvas relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="card-beige rounded-3xl p-8 sm:p-12 border-2 border-brand-red/30 bg-gradient-to-br from-white via-beige-50 to-beige-100 shadow-warm-lg relative overflow-hidden">
-          
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-redLight text-brand-red border border-brand-red/30">
-                <svg class="w-3.5 h-3.5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                B2B Educator & Creator Program
-              </span>
-              
-              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-dark">
-                Are You an Assam YouTube / Telegram Educator?
-              </h2>
-              
-              <p class="text-brand-slate text-sm sm:text-base leading-relaxed max-w-2xl">
-                Partner with PYQScore. Give your students verified chapter-wise test series with your branded discount code. Earn <strong class="text-brand-red font-bold">₹20 to ₹40 per enrolled student</strong> with real-time UPI payouts and a transparent live dashboard.
-              </p>
-
-
-            </div>
-
-            <!-- Action Button in #F04156 -->
-            <div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
-              <button onclick="openModal('mentor-modal')" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-extrabold text-sm shadow-brand-glow transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
-                <span>Apply as Mentor Partner</span>
-                <span>→</span>
-              </button>
-              <span class="text-[11px] text-brand-muted mt-2">Zero setup fee • Instant approval for active creators</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
 
     <!-- 8. FAQ ACCORDION -->
     <section id="faqs" class="py-20 bg-white border-t border-beige-border relative">
@@ -1342,7 +1302,6 @@
             <li><a href="/blog/" class="hover:text-brand-red transition-colors text-white font-bold flex items-center gap-1.5"><span>All Blog Posts & Guides</span><span class="text-[9px] px-1 rounded bg-brand-red text-white">HUB</span></a></li>
             <li><a href="#features" class="hover:text-brand-red transition-colors">Mistake Vault System</a></li>
             <li><a href="#demo" class="hover:text-brand-red transition-colors">Interactive Demo MCQ</a></li>
-            <li><a href="#affiliate" class="hover:text-brand-red transition-colors">Educator Partner Program</a></li>
             <li><a href="#faqs" class="hover:text-brand-red transition-colors">Refund & Guarantee</a></li>
           </ul>
         </div>
@@ -1505,66 +1464,7 @@
     </div>
   </div>
 
-  <!-- MODAL 3: MENTOR / EDUCATOR PARTNER -->
-  <div id="mentor-modal" class="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
-    <div class="card-beige max-w-lg w-full rounded-3xl p-6 sm:p-8 border-2 border-brand-red/40 shadow-2xl relative space-y-5">
-      
-      <button onclick="closeModal('mentor-modal')" class="absolute top-5 right-5 text-brand-muted hover:text-brand-dark text-lg font-bold">
-        ✕
-      </button>
 
-      <div class="space-y-1">
-        <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-brand-redLight text-brand-red uppercase">Partner Program</span>
-        <h3 class="text-xl font-bold text-brand-dark">Join as an Assam Mentor Partner</h3>
-        <p class="text-xs text-brand-slate">
-          Distribute customized test series to your students and receive ₹20–₹40 per student payout.
-        </p>
-      </div>
-
-      <form onsubmit="handleMentorSubmit(event)" class="space-y-3">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label class="block text-xs font-bold text-brand-dark mb-1">Teacher / Channel Name</label>
-            <input type="text" id="mentor-name" required placeholder="e.g. Lakshya Assam Classes" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-brand-dark mb-1">Channel / Group Link</label>
-            <input type="text" id="mentor-link" required placeholder="YouTube or Telegram link" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label class="block text-xs font-bold text-brand-dark mb-1">Subscriber / Student Count</label>
-            <select id="mentor-size" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red">
-              <option>1,000 - 5,000 Students</option>
-              <option>5,000 - 20,000 Students</option>
-              <option>20,000 - 100,000+ Students</option>
-              <option>Offline Coaching Institute</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-brand-dark mb-1">Your Direct WhatsApp</label>
-            <input type="tel" id="mentor-phone" required placeholder="10-digit number" maxlength="10" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs focus:outline-none focus:border-brand-red font-mono">
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs font-bold text-brand-dark mb-1">Requested Referral Code Prefix</label>
-          <input type="text" id="mentor-code" placeholder="e.g. LAKHYA10" class="w-full bg-white border border-beige-border rounded-xl px-3 py-2 text-brand-dark text-xs uppercase tracking-wider focus:outline-none focus:border-brand-red font-mono">
-        </div>
-
-        <button type="submit" class="w-full py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-xs shadow-brand-glow transition-all">
-          Submit Partnership Application →
-        </button>
-      </form>
-
-      <div id="mentor-success-msg" class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-300 text-xs text-center font-bold">
-        ✅ Application received! Our creator manager will message you on WhatsApp within 2 hours.
-      </div>
-
-    </div>
-  </div>
 
   <!-- JAVASCRIPT LOGIC & INTERACTIONS -->
   <script>
@@ -1803,7 +1703,6 @@
     window.onclick = function(event) {
       if (event.target.id === 'download-modal') closeModal('download-modal');
       if (event.target.id === 'beta-modal') closeModal('beta-modal');
-      if (event.target.id === 'mentor-modal') closeModal('mentor-modal');
     };
 
     // Form handlers
@@ -1822,15 +1721,6 @@
       setTimeout(() => {
         closeModal('beta-modal');
         document.getElementById('beta-success-msg').classList.add('hidden');
-      }, 3500);
-    }
-
-    function handleMentorSubmit(e) {
-      e.preventDefault();
-      document.getElementById('mentor-success-msg').classList.remove('hidden');
-      setTimeout(() => {
-        closeModal('mentor-modal');
-        document.getElementById('mentor-success-msg').classList.add('hidden');
       }, 3500);
     }
 
@@ -1864,7 +1754,7 @@
       { name: "Debabrat B.", location: "Nagaon", action: "unlocked ADRE Season Pass", time: "2 mins ago" },
       { name: "Ranjit K.", location: "Dibrugarh", action: "scored 138.5 in Sunday Mock #04", time: "4 mins ago" },
       { name: "Ananya S.", location: "Guwahati", action: "cleared 45 questions in Mistake Vault", time: "6 mins ago" },
-      { name: "Pranjal D.", location: "Jorhat", action: "applied Mentor code LAKHYA", time: "9 mins ago" },
+      { name: "Pranjal D.", location: "Jorhat", action: "scored 142.0 in Sunday Mock #05", time: "9 mins ago" },
       { name: "Mridul H.", location: "Tezpur", action: "completed Assam Geography Drill 03", time: "11 mins ago" }
     ];
 
