@@ -91,6 +91,21 @@
       "permanent": true
     },
     {
+      "source": "/blog/adre-3-preparation-pyq-free-mock-test-app-assamese",
+      "destination": "/blogs/adre-3-preparation-pyq-free-mock-test-app-assamese/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adre-3-preparation-pyq-free-mock-test-app-assamese/",
+      "destination": "/blogs/adre-3-preparation-pyq-free-mock-test-app-assamese/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-adre-3-preparation-pyq-free-mock-test-app-assamese.html",
+      "destination": "/blogs/adre-3-preparation-pyq-free-mock-test-app-assamese/",
+      "permanent": true
+    },
+    {
       "source": "/about.html",
       "destination": "/about/",
       "permanent": true
