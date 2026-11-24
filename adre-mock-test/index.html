@@ -260,64 +260,27 @@
         
         <!-- Mock Test Dropdown -->
         <div class="relative group py-2">
-          <button type="button" class="text-brand-red font-bold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 flex items-center gap-1.5 cursor-pointer" aria-expanded="false" aria-haspopup="true">
+          <button type="button" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 flex items-center gap-1.5 cursor-pointer" aria-expanded="false" aria-haspopup="true">
             <span>Mock Test</span>
             <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-stone-400 group-hover:text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <!-- Dropdown Menu -->
-          <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-150 z-50 w-72">
+          <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-150 z-50 w-64">
             <div class="bg-white rounded-2xl shadow-xl border border-stone-200/90 p-2 space-y-1">
-              <!-- ADRE Mock Test -->
-              <a href="../adre-mock-test/index.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-brand-redLight/70 transition-colors group/item">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-7 h-7 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-xs">3.0</span>
-                  <div>
-                    <span class="text-xs font-bold text-stone-900 group-hover/item:text-brand-red block">ADRE Mock Test (Grade 3 &amp; 4)</span>
-                    <span class="text-[10px] text-stone-500">Full Tests &amp; -0.25 CBT Engine</span>
-                  </div>
-                </div>
-                <span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-red text-white font-bold">PORTAL</span>
+              <a href="../adre-mock-test/index.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-stone-800 hover:text-brand-red hover:bg-brand-redLight/60 transition-colors">
+                ADRE 3.0 Mock Test
               </a>
-
-              <!-- ADRE Solved PYQ Mock Test -->
-              <a href="../adre-mock-test-previous-year-paper/index.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-brand-redLight/70 transition-colors group/item">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-7 h-7 rounded-lg bg-stone-900 text-white flex items-center justify-center font-bold text-xs">PYQ</span>
-                  <div>
-                    <span class="text-xs font-bold text-stone-900 group-hover/item:text-brand-red block">Solved PYQ Mock Tests</span>
-                    <span class="text-[10px] text-stone-500">Official Keys &amp; Solutions</span>
-                  </div>
-                </div>
-                <span class="text-[9px] px-1.5 py-0.5 rounded bg-emerald-600 text-white font-bold">NEW</span>
+              <a href="../adre-grade-3-previous-year-question-paper-pdf/index.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-stone-800 hover:text-brand-red hover:bg-brand-redLight/60 transition-colors">
+                ADRE 3.0 Grade III Mock Test
               </a>
-
-              <!-- Assam Police Mock Test -->
-              <a href="../blogs/assam-police-constable-exam/index.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-stone-50 transition-colors group/item">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-7 h-7 rounded-lg bg-stone-800 text-white flex items-center justify-center font-bold text-xs">AP</span>
-                  <div>
-                    <span class="text-xs font-bold text-stone-900 group-hover/item:text-brand-red block">Assam Police Mock Test</span>
-                    <span class="text-[10px] text-stone-500">SI &amp; Constable Test Series</span>
-                  </div>
-                </div>
-                <span class="text-[9px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-700 font-bold border border-stone-200">Series</span>
-              </a>
-
-              <div class="h-px bg-stone-100 my-1"></div>
-
-              <!-- App Free Demo Drill -->
-              <a href="https://play.google.com/store/apps/details?id=com.pyqscore.app" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded-xl bg-stone-50 hover:bg-brand-redLight/50 transition-colors group/app">
-                <div class="flex items-center gap-2">
-                  <span class="text-sm">📲</span>
-                  <span class="text-xs font-bold text-stone-800 group-hover/app:text-brand-red">All Assam Sunday Mocks (App)</span>
-                </div>
-                <span class="text-[9px] font-bold text-brand-red">FREE →</span>
+              <a href="../adre-mock-test/index.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-stone-800 hover:text-brand-red hover:bg-brand-redLight/60 transition-colors">
+                ADRE 3.0 Grade IV Mock Test
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Exams Dropdown -->
+                <!-- Exams Dropdown -->
         <div class="relative group py-2">
           <button type="button" class="text-stone-700 hover:text-brand-red font-semibold transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red rounded-lg px-1 flex items-center gap-1.5 cursor-pointer" aria-expanded="false" aria-haspopup="true">
             <span>Exam</span>
@@ -408,19 +371,13 @@
       <div class="pt-1">
         <span class="text-xs font-bold text-stone-400 uppercase tracking-wider block mb-1">Mock Tests</span>
         <div class="pl-2 space-y-1 text-sm border-l-2 border-brand-red/40">
-          <a href="../adre-mock-test/index.html" onclick="toggleMobileNav()" class="flex items-center justify-between pl-3 py-1.5 text-stone-800 hover:text-brand-red font-semibold">
-            <span>ADRE Mock Test (3.0)</span>
-            <span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-red text-white font-bold">PORTAL</span>
-          </a>
-          <a href="../adre-mock-test-previous-year-paper/index.html" onclick="toggleMobileNav()" class="flex items-center justify-between pl-3 py-1.5 text-stone-800 hover:text-brand-red font-semibold">
-            <span>Solved PYQ Mock Tests</span>
-            <span class="text-[9px] px-1.5 py-0.5 rounded bg-emerald-600 text-white font-bold">NEW</span>
-          </a>
-          <a href="../blogs/assam-police-constable-exam/index.html" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">Assam Police Mock Test</a>
+          <a href="../adre-mock-test/index.html" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">ADRE 3.0 Mock Test</a>
+          <a href="../adre-grade-3-previous-year-question-paper-pdf/index.html" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">ADRE 3.0 Grade III Mock Test</a>
+          <a href="../adre-mock-test/index.html" onclick="toggleMobileNav()" class="block pl-3 py-1.5 text-stone-800 hover:text-brand-red font-medium">ADRE 3.0 Grade IV Mock Test</a>
         </div>
       </div>
 
-      <!-- Exam Portals in Mobile -->
+            <!-- Exam Portals in Mobile -->
       <div class="pt-1">
         <span class="text-xs font-bold text-stone-400 uppercase tracking-wider block mb-1">Exam Portals</span>
         <div class="pl-2 space-y-1 text-sm border-l-2 border-stone-200">
